@@ -1,0 +1,9 @@
+@font-face {
+    font-family:  "Noah Text";
+    src: url("../assets/fonts/noah-text-regular.woff");
+}
+
+*{
+    font-family: "Noah Text";
+    font-weight: bold;
+}
