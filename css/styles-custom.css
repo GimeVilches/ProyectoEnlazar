@@ -7,3 +7,17 @@
     font-family: "Noah Text";
     font-weight: bold;
 }
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .8rem;
+    padding-left: .8rem;
+}
+.banner{
+    background-image: url("../assets/images/servicios-cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+    
+      
+   
+}
