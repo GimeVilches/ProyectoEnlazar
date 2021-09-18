@@ -14,7 +14,8 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
+        <!--fixed-top-->
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="../assets/images/logo-enlazar.svg" alt="" width="200" height="50">
@@ -62,13 +63,1077 @@
         </div>
     </nav>
 
-    <header class="container-fluid">
+    <!-- HEADER -->
+    <header class="header container-fluid">
+        <div class="header-image">
+            <h1 class="header-title">Todo largo camino, comienza con el primer paso... <br>
+                Comenzá hoy a prepararte para el futuro.</h1>
+        </div>
     </header>
 
-    <section>
-        
+    <!-- SUBHEADER -->
+    <section class="subheader-container">
+        <p class="subheader-text"> <span> Uno de nuestros compromisos es con la educación. </span> En un mundo que
+            avanza tan rápido es fundamental mantenerse
+            actualizado, informado y capacitado, por eso buscamos acercar el mejor conocimiento para todos los niveles,
+            desde los primeros acercamientos a un tema hasta los que ya son profesionales y quieren continuar
+            capacitándose.</p>
+        <img class="subheader-image" src="../assets/images/flecha-doble.svg" alt="Flecha doble">
+        <img class="letter-e-image" src="../assets/images/letra-e.png" alt="">
     </section>
 
+    <!-- Seccion de CARDS de cursos y talleres -->
+    <!-- Los MODALS los ubicamos en la linea 313 -->
+    <section class="section-cards__container container-fluid">
+        <!-- Primera fila de cursos -->
+        <div class="row d-flex justify-content-center pb-5">
+            <!-- Primer columna de cursos -->
+            <div class="d-flex justify-content-center col-lg-3">
+                <!-- Inicio de CARD Webinars & Workshops-->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../assets/images/curso-webinars-gratis.webp" class="card-image card-img-top"
+                        alt="Cursos gratuitos">
+                    <div class="card-body">
+                        <h5 class="card-title">Webinars & Workshops <br>
+                            gratuitos</h5>
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn-open-modal"
+                            class="button-card btn">¡Quiero + info!</a>
+                    </div>
+                </div>
+                <!-- Fin de CARD Webinars & Workshops -->
+            </div>
+            <!-- Segunda columna de cursos -->
+            <div class="d-flex justify-content-center col-lg-3">
+                <!-- Inicio de CARD -->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../assets/images/curso-seleccion-personal.webp" class="card-image card-img-top"
+                        alt="Cursos gratuitos">
+                    <div class="card-body">
+                        <h5 class="card-title">Introducción a la <br>
+                            selección de personal</h5>
+                        <a data-bs-toggle="modal" data-bs-target="#seleccionPersonalModal" id="btn-open-modal"
+                            class="button-card btn">¡Quiero + info!</a>
+                    </div>
+                </div>
+                <!-- Fin de CARD -->
+            </div>
+            <!-- Tercera columna de cursos -->
+            <div class="d-flex justify-content-center col-lg-3">
+                <!-- Inicio de CARD -->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../assets/images/curso-personal-it.webp" class="card-image card-img-top"
+                        alt="Cursos gratuitos">
+                    <class class="card-body">
+                        <h5 class="card-title">Selección de <br>
+                            personal IT</h5>
+                        <a data-bs-toggle="modal" data-bs-target="#seleccionPersonalITModal" id="btn-open-modal"
+                            class="button-card btn">¡Quiero + info!</a>
+                </div>
+            </div>
+            <!-- Fin de CARD -->
+        </div>
+        <!-- Segunda fila de cursos -->
+        <div class="row d-flex justify-content-center py-5">
+            <!-- Primera columna de cursos -->
+            <div class="d-flex justify-content-center col-lg-3">
+                <!-- Inicio de CARD -->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../assets/images/curso-coaching.webp" class="card-image card-img-top"
+                        alt="Cursos gratuitos">
+                    <div class="card-body">
+                        <h5 class="card-title">Coaching: <br>
+                            Introducción & Práctica</h5>
+                        <a data-bs-toggle="modal" data-bs-target="#coachingModal" id="btn-open-modal"
+                            class="button-card btn">¡Quiero + info!</a>
+                    </div>
+                </div>
+                <!-- Fin de CARD -->
+            </div>
+            <!-- Segunda columna de cursos -->
+            <div class="d-flex justify-content-center col-lg-3">
+                <!-- Inicio de CARD -->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../assets/images/curso-orientacion-laboral.webp" class="card-image card-img-top"
+                        alt="Cursos gratuitos">
+                    <div class="card-body">
+                        <h5 class="card-title">Orientación vocacional <br>
+                            & Ocupacional</h5>
+                        <a data-bs-toggle="modal" data-bs-target="#orientacionModal" id="btn-open-modal"
+                            class="button-card btn">¡Quiero + info!</a>
+                    </div>
+                </div>
+                <!-- Fin de CARD -->
+            </div>
+            <!-- Tercera columna de cursos -->
+            <div class="d-flex justify-content-center col-lg-3">
+                <!-- Inicio de CARD -->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../assets/images/curso-scrum.webp" class="card-image card-img-top" alt="Cursos gratuitos">
+                    <div class="card-body">
+                        <h5 class="card-title">Metodologías ágiles <br>
+                            (Scrum)</h5>
+                        <a data-bs-toggle="modal" data-bs-target="#scrumModal" id="btn-open-modal"
+                            class="button-card btn">¡Quiero + info!</a>
+                    </div>
+                </div>
+                <!-- Fin de CARD -->
+            </div>
+        </div>
+        <!-- Tercera fila de cursos -->
+        <div class="row d-flex justify-content-center py-5">
+            <!-- Primera columna de cursos -->
+            <div class="d-flex justify-content-center col-lg-3">
+                <!-- Inicio de CARD -->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../assets/images/curso-insercion-laboral.webp" class="card-image card-img-top"
+                        alt="Cursos gratuitos">
+                    <div class="card-body">
+                        <h5 class="card-title">Inserción laboral & <br>
+                            Perfil profesional</h5>
+                        <a data-bs-toggle="modal" data-bs-target="#insercionLaboralModal" id="btn-open-modal"
+                            class="button-card btn">¡Quiero + info!</a>
+                    </div>
+                </div>
+                <!-- Fin de CARD -->
+            </div>
+            <!-- Segunda columna de cursos -->
+            <div class="d-flex justify-content-center col-lg-3">
+                <!-- Inicio de CARD -->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../assets/images/curso-asistente-rrhh.webp" class="card-image card-img-top"
+                        alt="Cursos gratuitos">
+                    <div class="card-body">
+                        <h5 class="card-title">Asistente de <br>
+                            Recursos Humanos</h5>
+                        <a data-bs-toggle="modal" data-bs-target="#recursosHumanosModal" id="btn-open-modal"
+                            class="button-card btn">¡Quiero + info!</a>
+                    </div>
+                </div>
+                <!-- Fin de CARD -->
+            </div>
+            <!-- Tercera columna de cursos -->
+            <div class="d-flex justify-content-center col-lg-3">
+                <!-- Inicio de CARD -->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../assets/images/curso-liderazgo-gestion-equipos.webp" class="card-image card-img-top"
+                        alt="Cursos gratuitos">
+                    <div class="card-body">
+                        <h5 class="card-title">Liderazgo & <br>
+                            Gestión de equipos</h5>
+                        <a data-bs-toggle="modal" data-bs-target="#liderazgoGestionModal" id="btn-open-modal"
+                            class="button-card btn">¡Quiero + info!</a>
+                    </div>
+                </div>
+                <!-- Fin de CARD -->
+            </div>
+        </div>
+        <!-- Cuarta fila de cursos -->
+        <div class="row d-flex justify-content-center pt-5">
+            <!-- Primera columna de cursos -->
+            <div class="d-flex justify-content-center col-lg-3">
+                <!-- Inicio de CARD -->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../assets/images/curso-inteligencia-emocional.webp" class="card-image card-img-top"
+                        alt="Cursos gratuitos">
+                    <div class="card-body">
+                        <h5 class="card-title">Inteligencia <br>
+                            emocional</h5>
+                        <a data-bs-toggle="modal" data-bs-target="#inteligenciaEmocionalModal" id="btn-open-modal"
+                            class="button-card btn">¡Quiero + info!</a>
+                    </div>
+                </div>
+                <!-- Fin de CARD -->
+            </div>
+            <!-- Segunda columna de cursos -->
+            <div class="d-flex justify-content-center col-lg-3">
+                <!-- Inicio de CARD -->
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="../assets/images/curso-pnl.webp" class="card-image card-img-top" alt="Cursos gratuitos">
+                    <div class="card-body">
+                        <h5 class="card-title">PNL: Programación <br>
+                            neurolingüística</h5>
+                            <a data-bs-toggle="modal" data-bs-target="#pnlModal" id="btn-open-modal"
+                            class="button-card btn">¡Quiero + info!</a>
+                    </div>
+                </div>
+                <!-- Fin de CARD -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img width="60" src="../assets/images/isotipo-enlazar-blanco.png" alt="Logo Consultora Enlazar">
+            </div>
+            <div class="footer-left">
+                <ul class="footer-left__list">
+                    <!-- <li><img width="50" src="../assets/images/isotipo-enlazar-blanco.png" alt="Logo Consultora Enlazar"></li> -->
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <ul class="footer-middle__list">
+                    <li><a href="#">Cursos y Talleres</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <ul class="footer-right__list">
+                    <li>Descubrí nuestra comunidad</li>
+                    <li><a href="#"><img class="instagram-logo" src="../assets/images/logo-instagram.svg"
+                                alt="Logo instagram"></a></li>
+                    <li><a href="#"><img class="twitter-logo" src="../assets/images/logo-twitter.svg"
+                                alt="Logo twitter"></a></li>
+                    <li><a href="#"><img class="telegram-logo" src="../assets/images/logo-telegram.svg"
+                                alt="Logo telegram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <address class="address">Buenos Aires, Argentina</address>
+    </footer>
+
+    <!-- Boton de WhatsApp -->
+    <div>
+        <a href="https://wa.me/5492214987653/?text=Hola Conexion Cafe, quería realizarles una consulta..."
+            target="_blank">
+            <img class="whatsapp-icon" src="../assets/images/logo-whatsapp.svg" alt="Logo WhatsApp">
+        </a>
+    </div>
+
+    <!-- Boton de subir al top -->
+    <div>
+        <img class="arrow-icon" src="../assets/images/up-arrow.webp" alt="Flecha arriba">
+    </div>
+
+    <!-- INICIO SECCION DE MODALS -->
+    <!-- Inicio Modal Webinars & Workshops-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Webinars & Workshops gratuitos</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__image"> <img class="image-left"
+                            src="../assets/images/curso-webinars-gratis.webp" alt=""></div>
+                    <div class="modal-body__text">
+                        <ul class="modal-body__list">
+                            <li>
+                                Descubrí nuestras clases gratuitas y disfrutá del conocimiento brindado. Aprendamos
+                                juntos.
+                            </li>
+                        </ul>
+                        <p>Proximos webinars</p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Temas
+                            </li>
+                            <li>
+                                Temas
+                            </li>
+                            <li>
+                                Temas
+                            </li>
+                            <li>
+                                Temas
+                            </li>
+                            <li>
+                                Temas
+                            </li>
+                            <li>
+                                Temas
+                            </li>
+                            <li>
+                                Temas
+                            </li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium vitae numquam
+                            quibusdam aliquid voluptates odio maxime consectetur itaque minima corrupti esse nisi
+                            repellendus, harum corporis recusandae neque alias sequi deleniti veniam doloribus rerum qui
+                            laudantium? Non pariatur eum iste qui animi sed est exercitationem dignissimos, nobis
+                            voluptas facere corrupti sapiente consequatur odit quas velit explicabo ipsum assumenda ad!
+                            Cupiditate voluptates esse dignissimos consectetur deserunt assumenda maxime adipisci
+                            dolores quod reprehenderit dicta corrupti rem maiores aut iusto ab unde explicabo temporibus
+                            voluptatum, fuga deleniti nostrum? Harum magni, cumque obcaecati blanditiis exercitationem
+                            perferendis expedita, quaerat iusto aspernatur eaque ullam hic fugiat temporibus optio nihil
+                            sit quam est aut et. Incidunt maiores, maxime cumque assumenda vel culpa ducimus harum
+                            expedita ea deleniti numquam vero veniam itaque odio doloremque sint fugit, alias
+                            voluptates. Recusandae repudiandae explicabo quae? Rem dicta explicabo omnis mollitia ullam?
+                            Esse dicta asperiores ullam eligendi obcaecati voluptas beatae aliquam fugit illo sapiente
+                            ipsum deleniti, repellendus natus ducimus voluptatibus recusandae doloribus debitis sed
+                            consequatur exercitationem minima! Vel, doloribus tenetur cumque obcaecati ratione
+                            quibusdam? Illo voluptas repellendus officia, sit dicta eaque accusantium a asperiores et
+                            adipisci optio hic minus reiciendis. Recusandae dolorum alias libero quis officia, id
+                            debitis impedit doloribus perspiciatis provident?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://mpago.la/2bYW4h7" class="button-card btn">Comprar</a>
+                    <button type="button" class="button-card btn">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal Webinars & Workshops-->
+
+    <!-- Inicio Modal Introducción a la selección de personal -->
+    <div class="modal fade" id="seleccionPersonalModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Introducción a la selección de personal</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__image"> <img class="image-left"
+                            src="../assets/images/curso-seleccion-personal.webp" alt=""></div>
+                    <div class="modal-body__text">
+                        <p>Con este curso vas a adquirir y profundizar los conocimientos necesarios para que puedas
+                            desarrollarte como selector de personal. Vas a lograr incorporar las herramientas básicas
+                            para el buen ejercicio de la profesión
+                        </p>
+                        <ul class="modal-body__list">
+                            <li>
+                                La importancia del mundo del selector de personal. ¿Cuál es su rol? ¿Cómo se lleva a
+                                cabo? y ¿Qué responsabilidades tiene?
+                            </li>
+                            <li>
+                                Un recorrido sobre la implicancia de la labor profesional del selector de personal en
+                                una organización/empresa. El trabajo previo, durante y post.
+                            </li>
+                            <li>
+                                La descripción y relevamiento de un perfil. Análisis y planificación.
+                            </li>
+                            <li>
+                                Tipos de reclutamiento.
+                            </li>
+                            <li>
+                                Las mejores herramientas teóricas necesarias para reclutar, seleccionar e incorporar a
+                                las personas indicadas.
+                            </li>
+                            <li>
+                                Las técnicas más eficientes del proceso de entrevistar y cómo encontrar a los mejores
+                                talentos.
+                            </li>
+                            <li>
+                                Planificación de búsquedas, comunicación efectiva, análisis de postulantes y evaluación
+                                de candidatos.
+                            </li>
+                            <li>
+                                Análisis de competencias, incidentes críticos y toma de decisiones.
+                            </li>
+                            <li>
+                                Proceso de inducción.
+                            </li>
+                            <li>
+                                Acompañamiento y seguimiento del proceso.
+                            </li>
+                        </ul>
+                        <p class="modal-body__paragraph"><span>Público:</span> Estudiantes, profesionales, Personas
+                            interesadas en adquirir y profundizar sus conocimientos y habilidades en el área, con o sin
+                            experiencia.
+                        </p>
+                        <p class="modal-body__paragraph-method">Metodología</p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Virtual sincrónico mediante plataforma Google Meet - Zoom. ONLINE.
+                            </li>
+                            <li>
+                                Material de estudio propio.
+                            </li>
+                            <li>
+                                5 Clases de 1 hora y media c/u. Total de horas: 7:30 hs.
+                            </li>
+                            <li>
+                                Diploma de asistencia al finalizar el curso.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="button-card btn download-program">Descargar programa</a>
+                    <a href="https://mpago.la/2bYW4h7" class="button-card btn">Comprar</a>
+                    <button type="button" class="button-card btn">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal Introducción a la selección de personal -->
+
+    <!-- Inicio Modal Selección de personal IT -->
+    <div class="modal fade" id="seleccionPersonalITModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Selección de personal IT</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__image"> <img class="image-left"
+                            src="../assets/images/curso-personal-it.webp" alt=""></div>
+                    <div class="modal-body__text">
+                        <p>Con este curso vas a lograr adquirir las herramientas básicas para conocer el mundo del
+                            selector de personal IT. Vas a saber ejercer su rol y conocer el nuevo paradigma
+                            tecnológico. Profundizá tus habilidades para tener éxito como selector IT.
+                        </p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Fundamentos de los Perfiles IT ¿Qué y cuáles son los perfiles IT?
+                            </li>
+                            <li>
+                                La oferta y demanda, de este mercado.
+                            </li>
+                            <li>
+                                Conocimientos básicos de lenguaje de programación y frameworks.
+                            </li>
+                            <li>
+                                ¿Cómo se conforma el área de sistemas?
+                            </li>
+                            <li>
+                                Diferencia entre el selector de personal general y el IT.
+                            </li>
+                            <li>
+                                Identificar, buscar y atraer candidatos
+                            </li>
+                            <li>
+                                Proceso de Headhunting
+                            </li>
+                            <li>
+                                Análisis de CVs.
+                            </li>
+                            <li>
+                                Tipos de reclutamiento para perfiles IT
+                            </li>
+                            <li>
+                                Dinámicas y modelos de entrevista con perfiles IT
+                            </li>
+                            <li>
+                                Conceptos del mercado, expectativas, competencia e intereses
+                            </li>
+                        </ul>
+                        <p class="modal-body__paragraph"><span>Público:</span> Estudiantes, profesionales, Personas
+                            interesadas en adquirir y profundizar sus conocimientos y habilidades en el área, con o sin
+                            experiencia.
+                        </p>
+                        <p class="modal-body__paragraph-method">Metodología</p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Virtual sincrónico mediante plataforma Google Meet - Zoom. ONLINE.
+                            </li>
+                            <li>
+                                Material de estudio propio.
+                            </li>
+                            <li>
+                                5 Clases de 1 hora y media c/u. Total de horas: 7:30 hs.
+                            </li>
+                            <li>
+                                Diploma de asistencia al finalizar el curso.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="button-card btn download-program">Descargar programa</a>
+                    <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847b62931d017bf6b1a3297752" class="button-card btn">Comprar</a>
+                    <button type="button" class="button-card btn">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal Selección de personal IT -->
+
+    <!-- Inicio Modal Coaching: Introducción y práctica -->
+    <div class="modal fade" id="coachingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Coaching: Introducción y práctica</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__image"> <img class="image-left" src="../assets/images/curso-coaching.webp"
+                            alt=""></div>
+                    <div class="modal-body__text">
+                        <p>Con este curso vas a incorporar los conocimientos necesarios para comprender la disciplina y
+                            saber aplicarla. Lograrás comprender las bases fundamentales del coaching y su puesta en
+                            práctica.
+                        </p>
+                        <ul class="modal-body__list">
+                            <li>
+                                ¿Qué es el coaching?
+                            </li>
+                            <li>
+                                Fundamentos, objetivos, expectativas y alcance de la disciplina
+                            </li>
+                            <li>
+                                ¿Qué tipos de coaching existen?
+                            </li>
+                            <li>
+                                ¿Cuáles son los beneficios de hacer coaching? Fases, procesos y etapas
+                            </li>
+                            <li>
+                                ¿Cuál es el rol del coach y cómo llevarlo a cabo?
+                            </li>
+                            <li>
+                                La importancia de su labor y diferencia con otras áreas similares
+                            </li>
+                            <li>
+                                Coherencia entre cuerpo-emoción-lenguaje
+                            </li>
+                            <li>
+                                Distinciones, aprendizaje y observación
+                            </li>
+                            <li>
+                                Mapas mentales, filtros, rapport, feedback y liderazgo.
+                            </li>
+                            <li>
+                                Percepciones sensoriales
+                            </li>
+                            <li>
+                                Transparencias - quiebres - preguntas
+                            </li>
+                            <li>
+                                Acceso oculares
+                            </li>
+                        </ul>
+                        <p class="modal-body__paragraph"><span>Público:</span> Estudiantes, profesionales, Personas
+                            interesadas en adquirir y profundizar sus conocimientos y habilidades en el área, con o sin
+                            experiencia.
+                        </p>
+                        <p class="modal-body__paragraph-method">Metodología</p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Virtual sincrónico mediante plataforma Google Meet - Zoom. ONLINE.
+                            </li>
+                            <li>
+                                Material de estudio propio.
+                            </li>
+                            <li>
+                                5 Clases de 1 hora y media c/u. Total de horas: 7:30 hs.
+                            </li>
+                            <li>
+                                Diploma de asistencia al finalizar el curso.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="../assets/videos/programa-coaching.pdf" target="_blank" class="button-card btn download-program">Descargar programa</a>
+                    <a href="https://mpago.la/2bYW4h7" class="button-card btn">Comprar</a>
+                    <button type="button" class="button-card btn">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal Coaching: Introducción y práctica -->
+
+    <!-- Inicio Modal Orientación vocacional & Ocupacional -->
+    <div class="modal fade" id="orientacionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Orientación vocacional & Ocupacional</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__image"> <img class="image-left"
+                            src="../assets/images/curso-orientacion-laboral.webp" alt=""></div>
+                    <div class="modal-body__text">
+                        <p>Con este curso vas a incorporar los conocimientos necesarios para comprender la disciplina y
+                            saber aplicarla. Lograrás comprender las bases fundamentales del coaching y su puesta en
+                            práctica.
+                        </p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Te brindaremos una perspectiva actualizada del proceso de orientación vocacional.
+                            </li>
+                            <li>
+                                Tipos de empleos
+                            </li>
+                            <li>
+                                ¿Qué es la orientación vocacional?
+                            </li>
+                            <li>
+                                La importancia de las transiciones, los planes, proyecciones y objetivos.
+                            </li>
+                            <li>
+                                ¿Qué quiero, cómo, cuándo y qué estoy dispuesto a dar para conseguirlo?
+                            </li>
+                            <li>
+                                Objetivos profesionales
+                            </li>
+                            <li>
+                                Obtendrás las herramientas necesarias de acompañamiento para diseñar tu proyecto de
+                                vida, conseguirlo y mantenerlo.
+                            </li>
+                        </ul>
+                        <p class="modal-body__paragraph"><span>Público:</span> Estudiantes, profesionales, Personas
+                            interesadas en adquirir y profundizar sus conocimientos y habilidades en el área, con o sin
+                            experiencia.
+                        </p>
+                        <p class="modal-body__paragraph-method">Metodología</p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Virtual sincrónico mediante plataforma Google Meet - Zoom. ONLINE.
+                            </li>
+                            <li>
+                                Material de estudio propio.
+                            </li>
+                            <li>
+                                5 Clases de 1 hora y media c/u. Total de horas: 7:30 hs.
+                            </li>
+                            <li>
+                                Diploma de asistencia al finalizar el curso.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="button-card btn download-program">Descargar programa</a>
+                    <a href="https://mpago.la/2bYW4h7" class="button-card btn">Comprar</a>
+                    <button type="button" class="button-card btn">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal Orientación vocacional & Ocupacional -->
+
+    <!-- Inicio Modal Metodologías ágiles (Scrum) -->
+    <div class="modal fade" id="scrumModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Orientación vocacional & Ocupacional</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__image"> <img class="image-left" src="../assets/images/curso-scrum.webp"
+                            alt=""></div>
+                    <div class="modal-body__text">
+                        <p>Con este curso vas a comprender las metodologías que utilizan las grandes corporaciones para
+                            lograr altos rendimientos y eficiencia en sus productos y en sus equipos de trabajo.
+                            Vas a lograr adquirir los conocimientos fundamentales del SCRUM y su importancia en las
+                            dinámicas laborales.
+                        </p>
+                        <ul class="modal-body__list">
+                            <li>
+                                ¿Qué son las metodologías ágiles?
+                            </li>
+                            <li>
+                                ¿Cuál es su función y qué beneficios tienen?
+                            </li>
+                            <li>
+                                Scrum: principios, valores y buenas prácticas
+                            </li>
+                            <li>
+                                Fundamentos del scrum, la importancia del framework, roles, dinámicas y objetivos.
+                            </li>
+                            <li>
+                                ¿Dónde se puede aplicar, quienes lo llevan a cabo?
+                            </li>
+                            <li>
+                                Fundamentos del scrum, la importancia del framework, roles, dinámicas y objetivos.
+                            </li>
+                            <li>
+                                Ventajas de desempeñar estas metodologías.
+                            </li>
+                            <li>
+                                Herramientas para lograr implementarlo
+                            </li>
+                        </ul>
+                        <p class="modal-body__paragraph"><span>Público:</span> Estudiantes, profesionales, Personas
+                            interesadas en adquirir y profundizar sus conocimientos y habilidades en el área, con o sin
+                            experiencia.
+                        </p>
+                        <p class="modal-body__paragraph-method">Metodología</p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Virtual sincrónico mediante plataforma Google Meet - Zoom. ONLINE.
+                            </li>
+                            <li>
+                                Material de estudio propio.
+                            </li>
+                            <li>
+                                5 Clases de 1 hora y media c/u. Total de horas: 7:30 hs.
+                            </li>
+                            <li>
+                                Diploma de asistencia al finalizar el curso.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="button-card btn download-program">Descargar programa</a>
+                    <a href="https://mpago.la/2bYW4h7" class="button-card btn">Comprar</a>
+                    <button type="button" class="button-card btn">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal Metodologías ágiles (Scrum) -->
+
+    <!-- Inicio Modal Inserción laboral & Perfil profesional -->
+    <div class="modal fade" id="insercionLaboralModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Inserción laboral & Perfil profesional</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__image"> <img class="image-left"
+                            src="../assets/images/curso-insercion-laboral.webp" alt=""></div>
+                    <div class="modal-body__text">
+                        <p>Con este taller lograrás incorporar los recursos necesarios para lograr encontrar tu lugar en
+                            el nuevo mundo laboral.
+                            Destinado a quienes estén buscando su 1er empleo, actualizar su perfil profesional y/o dar
+                            un cambio en sus trayectorias.
+                        </p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Cómo se arma un cv y video cv.
+                            </li>
+                            <li>
+                                La importancia de la carta de presentación.
+                            </li>
+                            <li>
+                                Como se crea y actualiza un perfil de linkedin
+                            </li>
+                            <li>
+                                Marca y marketing personal
+                            </li>
+                            <li>
+                                ¿Dónde y cómo conseguir empleo?
+                            </li>
+                            <li>
+                                Portales de búsqueda genéricos y específicos.
+                            </li>
+                            <li>
+                                La importancia del networking, las competencias, y los objetivos
+                                personales/profesionales.
+                            </li>
+                            <li>
+                                Claves para tener éxito en una entrevista
+                            </li>
+                        </ul>
+                        <p class="modal-body__paragraph"><span>Público:</span> Estudiantes, profesionales, Personas
+                            interesadas en adquirir y profundizar sus conocimientos y habilidades en el área, con o sin
+                            experiencia.
+                        </p>
+                        <p class="modal-body__paragraph-method">Metodología</p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Virtual sincrónico mediante plataforma Google Meet - Zoom. ONLINE.
+                            </li>
+                            <li>
+                                Material de estudio propio.
+                            </li>
+                            <li>
+                                5 Clases de 1 hora y media c/u. Total de horas: 7:30 hs.
+                            </li>
+                            <li>
+                                Diploma de asistencia al finalizar el curso.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="button-card btn download-program">Descargar programa</a>
+                    <a href="https://mpago.la/2bYW4h7" class="button-card btn">Comprar</a>
+                    <button type="button" class="button-card btn">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal Inserción laboral & Perfil profesional -->
+
+    <!-- Inicio Modal Asistente de Recursos Humanos -->
+    <div class="modal fade" id="recursosHumanosModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Asistente de Recursos Humanos</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__image"> <img class="image-left"
+                            src="../assets/images/curso-asistente-rrhh.webp" alt=""></div>
+                    <div class="modal-body__text">
+                        <p>Orientado a personas y/o profesionales que busquen sumergirse y dar sus primeros pasos en el
+                            área de recursos humanos.
+                            Se abordarán las siguientes temáticas básicas para lograr un correcto desempeño como
+                            asistente de RR.HH. Lograrás tener una perspectiva actualizada sobre lo que las empresas
+                            buscan en el área.
+                        </p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Objetivos y funciones del área de Recursos Humanos
+                            </li>
+                            <li>
+                                Alcance, expectativas y desafíos
+                            </li>
+                            <li>
+                                ¿Cómo es la gestión de recursos humanos?
+                            </li>
+                            <li>
+                                Ética y obligaciones
+                            </li>
+                            <li>
+                                Diversidad laboral
+                            </li>
+                            <li>
+                                Motivaciones y compromiso. Teletrabajo y flexibilidad
+                            </li>
+                            <li>
+                                Herramientas para la administración de personal, roles de la organización, comunicación,
+                                desarrollo y capacitaciones.
+                            </li>
+                            <li>
+                                Remuneraciones, desempeño y beneficios
+                            </li>
+                            <li>
+                                Liderazgo y clima laboral
+                            </li>
+                            <li>
+                                Contratos laborales, tipos de trabajos, altas y bajas de empleados, normativas vigentes,
+                                funciones administrativas y convenios.
+                            </li>
+                        </ul>
+                        <p class="modal-body__paragraph"><span>Público:</span> Estudiantes, profesionales, Personas
+                            interesadas en adquirir y profundizar sus conocimientos y habilidades en el área, con o sin
+                            experiencia.
+                        </p>
+                        <p class="modal-body__paragraph-method">Metodología</p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Virtual sincrónico mediante plataforma Google Meet - Zoom. ONLINE.
+                            </li>
+                            <li>
+                                Material de estudio propio.
+                            </li>
+                            <li>
+                                5 Clases de 1 hora y media c/u. Total de horas: 7:30 hs.
+                            </li>
+                            <li>
+                                Diploma de asistencia al finalizar el curso.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="button-card btn download-program">Descargar programa</a>
+                    <a href="https://mpago.la/2bYW4h7" class="button-card btn">Comprar</a>
+                    <button type="button" class="button-card btn">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal Asistente de Recursos Humanos -->
+
+    <!-- Inicio Modal Liderazgo & Gestión de equipos -->
+    <div class="modal fade" id="liderazgoGestionModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Liderazgo & Gestión de equipos</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__image"> <img class="image-left"
+                            src="../assets/images/curso-liderazgo-gestion-equipos.webp" alt=""></div>
+                    <div class="modal-body__text">
+                        <ul class="modal-body__list">
+                            <li>
+                                Cuáles son las características que tiene que tener un líder.
+                            </li>
+                            <li>
+                                Cómo nos convertimos en líderes.
+                            </li>
+                            <li>
+                                Diferencia entre líder y jefe.
+                            </li>
+                            <li>
+                                Rol y responsabilidades.
+                            </li>
+                            <li>
+                                Delegaciones, resolución de conflictos, estrategias de motivación, necesidad de feedback
+                            </li>
+                            <li>
+                                Tipos de liderazgo y participación.
+                            </li>
+                            <li>
+                                La importancia de la formación de equipos de trabajo y su correspondiente gestión.
+                            </li>
+                            <li>
+                                Fundamentos del Liderazgo de equipos
+                            </li>
+                        </ul>
+                        <p class="modal-body__paragraph"><span>Público:</span> Estudiantes, profesionales, Personas
+                            interesadas en adquirir y profundizar sus conocimientos y habilidades en el área, con o sin
+                            experiencia.
+                        </p>
+                        <p class="modal-body__paragraph-method">Metodología</p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Virtual sincrónico mediante plataforma Google Meet - Zoom. ONLINE.
+                            </li>
+                            <li>
+                                Material de estudio propio.
+                            </li>
+                            <li>
+                                5 Clases de 1 hora y media c/u. Total de horas: 7:30 hs.
+                            </li>
+                            <li>
+                                Diploma de asistencia al finalizar el curso.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="button-card btn download-program">Descargar programa</a>
+                    <a href="https://mpago.la/2bYW4h7" class="button-card btn">Comprar</a>
+                    <button type="button" class="button-card btn">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal Liderazgo & Gestión de equipos -->
+
+    <!-- Inicio Modal Inteligencia emocional -->
+    <div class="modal fade" id="inteligenciaEmocionalModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Inteligencia emocional</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__image"> <img class="image-left"
+                            src="../assets/images/curso-inteligencia-emocional.webp" alt=""></div>
+                    <div class="modal-body__text">
+                        <ul class="modal-body__list">
+                            <li>
+                                Qué es la inteligencia emocional y cuál es su importancia.
+                            </li>
+                            <li>
+                                Cómo reconocer las emociones y usarlas a nuestro favor.
+                            </li>
+                            <li>
+                                Reconocer las emociones del resto y comprenderlas.
+                            </li>
+                            <li>
+                                Convertir la emoción estática en emoción que predisponga a la acción.
+                            </li>
+                            <li>
+                                Cómo regular las emociones para obtener resultados efectivos y contagiar al resto.
+                            </li>
+                            <li>
+                                Generación de espacios emocionales positivos , y mucho más
+                            </li>
+                        </ul>
+                        <p class="modal-body__paragraph"><span>Público:</span> Estudiantes, profesionales, Personas
+                            interesadas en adquirir y profundizar sus conocimientos y habilidades en el área, con o sin
+                            experiencia.
+                        </p>
+                        <p class="modal-body__paragraph-method">Metodología</p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Virtual sincrónico mediante plataforma Google Meet - Zoom. ONLINE.
+                            </li>
+                            <li>
+                                Material de estudio propio.
+                            </li>
+                            <li>
+                                5 Clases de 1 hora y media c/u. Total de horas: 7:30 hs.
+                            </li>
+                            <li>
+                                Diploma de asistencia al finalizar el curso.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="button-card btn download-program">Descargar programa</a>
+                    <a href="https://mpago.la/2bYW4h7" class="button-card btn">Comprar</a>
+                    <button type="button" class="button-card btn">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal Inteligencia emocional -->
+
+    <!-- Inico Modal PNL: Programación neurolingüística -->
+    <div class="modal fade" id="pnlModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">PNL: Programación neurolingüística</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__image"> <img class="image-left"
+                            src="../assets/images/curso-pnl.webp" alt=""></div>
+                    <div class="modal-body__text">
+                        <ul class="modal-body__list">
+                            <li>
+                                Qué es la PNL, cómo se utiliza como herramienta de cambio.
+                            </li>
+                            <li>
+                                Entender la correlación entre lenguaje y comportamiento.
+                            </li>
+                            <li>
+                                Sistemas representativos, mapas mentales, comunicación y asertividad.
+                            </li>
+                            <li>
+                                Lo fundamental del lenguaje corporal, la mentalización, accesos oculares y la práctica.
+                            </li>
+                        </ul>
+                        <p class="modal-body__paragraph"><span>Público:</span> Estudiantes, profesionales, Personas
+                            interesadas en adquirir y profundizar sus conocimientos y habilidades en el área, con o sin
+                            experiencia.
+                        </p>
+                        <p class="modal-body__paragraph-method">Metodología</p>
+                        <ul class="modal-body__list">
+                            <li>
+                                Virtual sincrónico mediante plataforma Google Meet - Zoom. ONLINE.
+                            </li>
+                            <li>
+                                Material de estudio propio.
+                            </li>
+                            <li>
+                                5 Clases de 1 hora y media c/u. Total de horas: 7:30 hs.
+                            </li>
+                            <li>
+                                Diploma de asistencia al finalizar el curso.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="button-card btn download-program">Descargar programa</a>
+                    <a href="https://mpago.la/2bYW4h7" class="button-card btn">Comprar</a>
+                    <button type="button" class="button-card btn">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal PNL: Programación neurolingüística -->
+    <!-- FIN SECCION DE MODALS -->
+
+    <!-- Script CUSTOM -->
+    <script src="../js/main.js"></script>
     <!-- Script BOOTSTRAP -->
     <script src="../js/bootstrap.bundle.js"></script>
 </body>

@@ -1,75 +1,375 @@
+/* -----Fuente principal de la pagina----- */
 @font-face {
-    font-family:  "Noah Text";
-    src: url("../assets/fonts/noah-text-regular.woff");
+  font-family: "Noah Text";
+  src: url("../assets/fonts/noah-text-regular.woff");
 }
 @font-face {
-    font-family:  "Noah Text";
-    src: url("../assets/fonts/noah-text-bold.woff");
+  font-family: "Noah Text";
+  src: url("../assets/fonts/noah-text-bold.woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Noah Text";
+  src: url("../assets/fonts/noah-text-light-300.woff");
+  font-weight: 300;
 }
 
-
-*{
-    font-family: "Noah Text";
-    font-weight: regular;
-}
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: .8rem;
-    padding-left: .8rem;
-}
-.banner{
-    background-image: url("../assets/images/servicios-cover.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-	min-height: 400px;
-	background-size: cover;
-	display: flex;
-    justify-content: center;    
-   
+/* -----Variables----- */
+:root {
+  --fuente-principal: "Noah Text";
+  --azul-claro: #bac9ce;
+  --azul-medio: #34668a;
+  --amarillo: #ebbe48;
+  --negro: #000000;
+  --blanco: #ffffff;
 }
 
-.tituloBanner{
-   
-    font-family: "Noah Text";
-    font-weight: bold;
-    font-style: normal;
-    color: #FFFFFF;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-   justify-content: center;
-   position: absolute;
-   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-
+* {
+  font-family: var(--fuente-principal);
+  font-weight: normal;
 }
 
-.somosEnlazar{
-    background-color: #043959;
-    width: 100%;
-    height: 400px;
+/* -----Inicio Navbar----- */
+.navbar-custom {
+  background-color: var(--blanco);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 8%);
+  padding: 1rem 0;
 }
-.tituloEnlazar{
-    font-family: "Noah Text";
-    font-weight: bold;
-    font-style: normal;
-    font-size: 40px;
-    color: #FFFFFF;
-    padding: 50px;
-    
-    line-height: 50px;
+/* -----Fin Navbar----- */
 
+/* -----Inicio Header----- */
+.header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/fotito.png");
+  background-position: top center; /*3rem*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
 }
-.textoSomos{
-    font-family: "Noah Text";
-    font-weight: 300;
-    font-style: normal;
-    font-size: 18px;
-    color: #FFFFFF;
-    display: block;
-    width: 50%;
-    padding-left: 50px;
-
+.header {
+  height: 70vh;
+  padding: 0;
 }
+.header-title {
+  color: var(--blanco);
+  padding: 0 9rem;
+  font-weight: bold;
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+/* -----Fin Header----- */
+
+/* -----Inicio Subheader----- */
+.subheader-container {
+  position: relative;
+  max-height: 340px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+.subheader-text {
+  font-weight: normal;
+  max-width: 55%;
+  margin: 5rem 4rem 5rem 5rem;
+}
+.subheader-text span {
+  font-weight: bold;
+}
+.subheader-image {
+  align-self: center;
+  padding-bottom: 10px;
+  width: 2rem;
+  transform: rotate(90deg);
+  filter: invert(31%) sepia(68%) saturate(409%) hue-rotate(162deg)
+    brightness(98%) contrast(89%);
+}
+.letter-e-image {
+  position: absolute;
+  width: 17rem;
+  top: 4rem;
+  right: 0;
+}
+/* -----Fin Subheader----- */
+
+/* -----Inicio Seccion CARDS de cursos----- */
+.section-cards__container {
+  background-color: var(--azul-claro);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.card {
+  background-color: var(--azul-medio);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  transition: ease-in-out 0.4s;
+}
+.card:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+.card:hover img{
+    transform: scale(1.2) translateY(5em);
+    filter: grayscale(100%);
+    z-index: -1;
+}
+.card:hover .card-title{
+    transform: translateY(-10em);
+}
+.card-image {
+  width: 70%;
+  align-self: center;
+  transition: 0.3s;
+}
+.card-body {
+  color: var(--blanco);
+  padding: 1rem 1rem 2rem 1rem;
+}
+.card-title {
+  margin-bottom: 1.5rem;
+  transition: 0.3s;
+}
+.button-card {
+  background-color: var(--amarillo);
+  border-radius: 1.2em;
+  padding: 0.2rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* -----Fin Seccion CARDS de cursos----- */
+
+/* -----Inicio Footer----- */
+.footer {
+  background: linear-gradient(180deg, #043959 0%, #34668a 100%);
+}
+.footer-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Footer Logo */
+.footer-logo {
+  padding-right: 3rem;
+}
+/* Footer left */
+.footer-left__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0;
+  border-right: 1px solid #ebbe48;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+}
+.footer-left__list a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+.footer-left__list li {
+  padding: 0 0.6rem;
+  border-right: 1px solid white;
+}
+.footer-left__list li:last-child {
+  padding: 0 0.6rem;
+  border-right: none;
+}
+/* Footer middle */
+.footer-middle__list {
+  list-style: none;
+  margin-bottom: 0;
+  border-right: 1px solid #ebbe48;
+  padding: 0.5rem 2rem;
+}
+.footer-middle__list a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+/* Footer right */
+.footer-right__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: var(--blanco);
+  margin-bottom: 0;
+  padding: 0.5rem 2rem;
+}
+.footer-right__list li {
+  padding: 0 0.6rem;
+}
+.footer-right__list img {
+  color: var(--blanco);
+}
+.instagram-logo,
+.twitter-logo,
+.telegram-logo {
+  filter: brightness(0) invert(1);
+  width: 1.5rem;
+}
+.address {
+  color: var(--blanco);
+  font-weight: 300;
+  margin-bottom: 0;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+/* -----Fin Footer----- */
+
+/* -----Inicio WhatsApp boton----- */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 1.5em;
+  right: 1.5em;
+  height: 3em;
+  width: 3em;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
+}
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+/* -----Fin WhatsApp boton----- */
+
+/* -----Inicio Subir al top boton----- */
+.arrow-icon {
+  position: fixed;
+  bottom: 800px;
+  right: 6em;
+  height: 3em;
+  width: 3em;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
+  filter: invert(90%) sepia(74%) saturate(3294%) hue-rotate(319deg)
+    brightness(95%) contrast(93%);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+.active {
+  bottom: 1.5em;
+  visibility: visible;
+  opacity: 1;
+}
+/* -----Fin Subir al top boton----- */
+
+/* -----Inicio Modals----- */
+.modal-content {
+  background-color: var(--azul-medio);
+  border-radius: 10px;
+}
+.modal-header {
+  border-bottom: none;
+  justify-content: center;
+  /* padding-left: 1em; */
+}
+.modal-title {
+  color: var(--blanco);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.modal-body {
+  display: flex;
+  align-items: center;
+}
+.modal-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 140px;
+  /* display: inline; */
+  border-top: 2px solid var(--amarillo);
+  border-left: 2px solid var(--amarillo);
+  height: 151px;
+  width: 570px;
+  z-index: 1;
+}
+.modal-body__image {
+  align-self: baseline;
+  z-index: 2;
+  margin: 0 3em;
+}
+.image-left {
+  width: 12em;
+}
+.modal-body li {
+  color: var(--blanco);
+  font-weight: normal;
+  list-style-image: url(../assets/images/flecha.svg);
+}
+.modal-body p {
+  color: var(--blanco);
+}
+.modal-footer {
+  border-top: none;
+  padding: 2em;
+  justify-content: space-around;
+}
+.btn-close {
+  background: transparent url(../assets/images/x-cerrar.svg);
+  filter: invert(90%) sepia(74%) saturate(3294%) hue-rotate(319deg)
+    brightness(95%) contrast(93%);
+  opacity: 1;
+  align-self: flex-end;
+  margin: 1em 1em 0.3em 0;
+  font-size: 1.5em;
+}
+.modal-body__list {
+  padding-left: 1em;
+}
+.modal-body__paragraph span {
+  font-weight: bold;
+}
+.modal-body__paragraph-method {
+  font-weight: bold;
+}
+.download-program {
+  border: 2px solid var(--amarillo);
+  color: var(--blanco);
+  background: none;
+  padding: 0.2em 1.2em;
+}
+/* -----Fin Modals----- */
 
 
+/* -----Pagina comunidad----- */
 
+/* -----Inicio Subheader----- */
+.subheader-container-comunity{
+  position: relative;
+  /* max-height: 340px; */
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+.letter-e-image__comunity{
+  position: absolute;
+  width: 17rem;
+  top: 21em;
+  left: -8em;
+}
+.subheader-comunity__text{
+  font-weight: bold;
+}
+.btn-ir-ahora{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  width: 12em;
+  transition: ease-in-out 0.3s;
+}
+.btn-ir-ahora:hover{
+  transform: scale(1.02);
+}
+.subheader-comunity__img{
+  width: 7em;
+  transition: ease-in-out 0.2s;
+}
+.subheader-comunity__img:hover{
+  transform: translateY(-5px);
+}
