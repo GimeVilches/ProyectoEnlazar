@@ -1,68 +1,66 @@
-@font-face {
-    font-family:  "Noah Text";
-    src: url("../assets/fonts/noah-text-regular.woff");
-}
+
 @font-face {
     font-family:  "Noah Text";
     src: url("../assets/fonts/noah-text-bold.woff");
+
+}
+@font-face {
+    font-family:  "Noah Text";
+    src: url("../assets/fonts/Noah_Text_Regular.otf")
+}
+.fontBold{
+    font-family: "Noah Text";
+    font-weight: bold;
+    font-style: normal;
+}
+.fontNormal{
+    font-family: "Noah Text";
+    font-weight: Regular;
+    font-style: normal;
 }
 
 
-*{
-    font-family: "Noah Text";
-    font-weight: regular;
+* {
+    margin: 0;
+    padding: 0;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: .8rem;
     padding-left: .8rem;
 }
+
+
 .banner{
-    background-image: url("../assets/images/servicios-cover.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
-	min-height: 400px;
-	background-size: cover;
-	display: flex;
-    justify-content: center;    
-   
+    height: 100%;
+
 }
-
-.tituloBanner{
-   
-    font-family: "Noah Text";
-    font-weight: bold;
-    font-style: normal;
-    color: #FFFFFF;
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-   justify-content: center;
-   position: absolute;
-   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-
+.videoBanner{
+    width: 100%;
+    height: 100%;
 }
 
 .somosEnlazar{
     background-color: #043959;
     width: 100%;
-    height: 400px;
+    height: 500px;
+    margin-top: -10px;
+    display: flex;
+   flex-wrap: wrap;
+   position: relative;
+  
 }
 .tituloEnlazar{
-    font-family: "Noah Text";
-    font-weight: bold;
-    font-style: normal;
+    
     font-size: 40px;
     color: #FFFFFF;
-    padding: 50px;
-    
+    padding-top: 50px;
     line-height: 50px;
+    margin-left: 50PX;
 
 }
 .textoSomos{
-    font-family: "Noah Text";
-    font-weight: 300;
-    font-style: normal;
+    
     font-size: 18px;
     color: #FFFFFF;
     display: block;
@@ -70,6 +68,337 @@
     padding-left: 50px;
 
 }
+.fotoEnlazar{
+    width: 28%;
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 850px;
+  
+}
+.buttonEnlazar{
+    background-color: #EBBE48;
+    border-radius: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
+    padding:5px 8px;
+    border: none;
 
+}
+.nuestroObjetivo{
+    background-color:#34668A;
+    width: 100%;
+    height: 398px;
+    
+    display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   
+}
+.tituloObjetivo{
+    font-size: 40px;
+    color: #FFFFFF;
+   padding-top: 100px;
+    line-height: 50px;
+   margin-left: 700px;
 
+}
+.textoObjetivo{
+    font-size: 18px;
+    color: #FFFFFF;
+    display: block;
+    width: 40%;
+  
+    margin-left: 700px;
+    position: absolute;
 
+    
+}
+.fotoObjetivo{
+    width: 40%;
+    display: block;
+    position: absolute;
+    
+}
+.conocenos{
+    background-color: #C4C4C4;
+    width: 100%;
+    height: 400px;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   position: relative;
+
+}
+.tituloConocenos{
+    font-size: 40px;
+    color:#323232;
+    
+  
+
+}
+.textoConocenos{
+    font-size: 18px;
+    color: #323232;
+  
+    
+
+}
+.buttonConocenos{
+    background-color: #EBBE48;
+    border-radius: 100px;
+    border: none;
+    padding: 5px;
+    position: absolute;
+   bottom: 120px;  
+}
+.flechaDoble{
+    height: 20px;
+    position: absolute;
+   bottom: 70px;  
+}
+.bannerAprende{
+    background-image: url("../assets/images/aprende-con-nosotros.jpg");
+
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+    width: 100%;
+	min-height: 500px;
+    padding: 150px;
+    flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+  
+   
+}
+
+.tituloAprende{
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.textoAprende{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.buttonAprende{
+    background-color: #EBBE48;
+    border-radius: 100px;
+    border: none;
+    padding: 5px;
+    margin-left: 100px;
+    margin-top: 20px;
+    justify-self: center;
+    
+}
+.acompañamos1{
+    color: #323232;
+    text-align: center;
+    margin-top: 100px;
+}
+.acompañamos2{
+    color: #34668A;
+    text-align: center;
+}
+
+    
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+    
+    
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .swiper-slide img {
+    display: inline-block;
+
+    width: 30%;
+    height: 30%;
+    
+  }
+  .contTitulo{
+      margin-top: 150px;
+  }
+  .tituloOrientar{
+      color: #043959;
+      text-align: right;
+      font-size: 40px;
+     margin-right: 40px;
+     
+  }
+  .textoOrientar{
+      text-align: right;
+      font-size: 20px;
+      margin-right: 40px;
+  }
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    margin-right: 2rem;
+    margin-left: 34rem;
+   
+    justify-content: right;
+}
+.col-md-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+    padding: 2px;
+}
+.btn {
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #323232;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color:#EBBE48;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: 100px;
+    width: 280px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+   
+}
+textarea.form-control {
+    min-height: calc(1.5em + .75rem + 2px);
+    width: 40.5rem;
+    margin-left: 120px;
+}
+.footer {
+    background: linear-gradient(180deg, #043959 0%, #34668a 100%);
+  }
+  .footer-container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+  }
+  /* Footer Logo */
+  .footer-logo {
+    padding-right: 3rem;
+  }
+  /* Footer left */
+  .footer-left__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0;
+    border-right: 1px solid #ebbe48;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+  }
+  .footer-left__list a {
+    text-decoration: none;
+    color: var(--blanco);
+  }
+  .footer-left__list li {
+    padding: 0 0.6rem;
+    border-right: 1px solid white;
+    color: white;
+  }
+  .footer-left__list li:last-child {
+    padding: 0 0.6rem;
+    border-right: none;
+    color: white;
+  }
+  /* Footer middle */
+  .footer-middle__list {
+    list-style: none;
+    margin-bottom: 0;
+    border-right: 1px solid #ebbe48;
+    padding: 0.5rem 2rem;
+  }
+  .footer-middle__list a {
+    text-decoration: none;
+    color: var(--blanco);
+    color: white;
+  }
+  /* Footer right */
+  .footer-right__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: var(--blanco);
+    margin-bottom: 0;
+    padding: 0.5rem 2rem;
+  }
+  .footer-right__list li {
+    padding: 0 0.6rem;
+    color: white;
+  }
+  .footer-right__list img {
+    color: var(--blanco);
+  }
+  .instagram-logo,
+  .twitter-logo,
+  .telegram-logo {
+    filter: brightness(0) invert(1);
+    width: 1.5rem;
+  }
+  .address {
+    color: var(--blanco);
+    font-weight: 300;
+    margin-bottom: 0;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: white;
+  }
+  /* -----Fin Footer----- */
+  /* -----Inicio WhatsApp boton----- */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 1.5em;
+    right: 1.5em;
+    height: 3em;
+    width: 3em;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
+    margin-bottom: 180px;
+  }
+  .whatsapp-icon:hover {
+    transform: scale(1.1);
+  }
+  /* -----Fin WhatsApp boton----- */
+      

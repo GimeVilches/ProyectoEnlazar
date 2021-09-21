@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles-custom.css">
     <title>Document</title>
@@ -11,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="../assets/images/logo-enlazar.svg" alt="" width="200" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -57,20 +58,235 @@
         </div>
     </nav>
     <div class="banner">
-       <div class="tituloBanner">
-           <h1>Potenciamos tu equipo de trabajo</h1>
-       </div>
-    </div>
+        <video class="videoBanner"  controls autoplay loop muted  src="../assets/videos/videoEnlazar.mp4" type="video/mp4"></video>
+    </div>  
        <section>
-           <div class="somosEnlazar">
-               <h1 class="tituloEnlazar">Somos Enlazar</h1>
-               <p class="textoSomos">
+           <div class="somosEnlazar ">
+               <div>
+               <h1 class="tituloEnlazar fontBold">Somos Enlazar</h1>
+               <p class="textoSomos fontNormal">
                 Enlazar es una organización que nació como respuesta a la necesidad global de mejorar la calidad humana del trabajo. Nuestra comunidad busca brindar un acompañamiento personalizado, real y empático a toda persona, grupo u organización que lo requiera para potenciar sus objetivos. Nuestra metodología se basa en el trabajo colaborativo, la pluralidad de voces, una visión generalista e interdisciplinaria. Además, tenemos un gran compromiso comunitario con el cual asistimos y orientamos a emprendedores y ONG para ayudarlos a conseguir un mayor crecimiento y mejor funcionamiento.
                </p>
+               <button class="buttonEnlazar fontBold">CONOCÉ NUESTRO EQUIPO</button>
+            </div>
+            <div>
+               <img class="fotoEnlazar" src="../assets/images/somos-enlazar.png" alt="Imagen Somos Enlazar">
+            </div>
+            
            </div>
        </section>
+       <section>
+           <div class="nuestroObjetivo">
+            <div>
+                <img class="fotoObjetivo" src="../assets/images/nuestro-objetivo.png" alt="Imagen Nuestro Objetivo">
+            </div>
+            <div>
+                <h1 class="tituloObjetivo fontBold">Nuestro Objetivo</h1>
+                <p class="textoObjetivo fontNormal">Queremos que cada persona y organización sea consciente de sus capacidades y pueda aplicarlas. Vamos a brindar las mejores herramientas para lograr tener éxito en el nuevo mundo del trabajo. Para esto, nuestros profesionales analizarán y recomendarán cuales son las mejores intervenciones para cada caso particular.</p>
+                
+            </div>
+            
+           </div>
+       </section>
+      <section>
+          <div class="conocenos">
+              <div>
+              <h2 class="tituloConocenos fontBold">Conocé todo lo que tenemos para ofrecerte.</h2>
+              
+              <p class="textoConocenos fontNormal"> Nuestros servicios están fundados en la calidad de información, actualización y transmisión.</p>
+              <br>
+            </div>
+            <button class="buttonConocenos fontBold">CONOCÉ NUESTROS SERVICIOS</button>
+            <img class="flechaDoble" src="../assets/images/Vector.png" alt="Imagen flecha">
+            </div>
+           
+      </section>
+      <section>
+          <div class="bannerAprende">
+              <div class="fotoBanner">
+                  <h1 class="tituloAprende fontBold">Aprendé con nosotros.</h1>
+                  <p class="textoAprende fontNormal">Conocé todo lo que tenemos para ofrecerte.</p>
+                  <div>
+                    <button class="buttonAprende fontBold">CURSOS Y TALLERES</button>
+                  </div>
 
-    
+
+              </div>
+          </div>
+      </section>
+      <section>
+          <div class="teAcompañamos">
+              <h2 class="acompañamos1">Te acompañamos siempre.</h2> 
+              <h2 class="acompañamos2">Garantizamos tu aprendizaje.</h2>
+            </div>
+      </section>
+      <section>
+          <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-08.png" alt="">
+                
+                <p class="fontBold">
+                    Diego
+                </p>
+                <p class="fontNormal">“Muchas gracias, sin duda <br> son la mejor página. <br> Todos sus consejos <br> son de mucho valor”</p>
+            </div>
+          <div class="swiper-slide"> <img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-01.png" alt=""> 
+            <p class="fontBold">Sofía</p>
+            <p class="fontNormal">“Gracias Enlazar por <br> darme una mano con mi <br> CV, increible la mejora y el <br> asesoramiento”</p>
+        </div>
+        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-05.png" alt="">
+        <p class="fontBold">Jona</p>
+        <p class="fontNormal">“Les agradezco por la <br> buena onda y el gran <br> trabajo”</p>
+        </div>
+        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-07.png" alt="">
+        <p class="fontBold">Diego</p>
+        <p class="fontNormal">“Me fue bien en la entrevista, <br> me llamaron y arranco en <br> breve. Me ayudaron <br> muchísimo con sus tips”</p>
+        </div>
+        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-06.png" alt="">
+        <p class="fontBold">Nicolás</p>
+        <p class="fontNormal">"Muy buena la información <br> que comparten, ayuda a <br> mucha gente"</p>
+        </div>
+        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-04.png" alt="">
+        <p class="fontBold">Florencia</p>
+        <p class="fontNormal">"Que buen material! <br> Agradezco estar acá"</p>
+        </div>
+        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-05.png" alt="">
+        
+        <p class="fontBold">Juan Pablo</p>
+        <p class="fontNormal">"Gracias por la posibilidad de <br> este espacio y por poder ser <br> miembro de la comunidad. <br> Valoro mucho el buen trato y <br> la información que nos pasan"</p>
+        </div>
+        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-07.png" alt="">
+        <p class="fontBold">George</p>
+        <p class="fontNormal">"Hola, quiero agradecer <br> por toda la info, está <br> buenisima"</p>
+        </div>  
+        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-03.png" alt="">
+        <p class="fontBold">Rosmily</p>
+        <p class="fontNormal">"Excelente el espacio que <br> brinda, muchas gracias <br> por la dedicación. Un <br> placer formar parte"</p>
+        </div>
+          <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-02.png" alt="">
+            <p class="fontBold">Florencia</p>
+            <p class="FontNormal">"Me ayuda mucho el <br> acompañamiento que <br> brindan, la motivación y <br> los consejos" </p>
+        </div>
+        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-06.png" alt="">
+            <p class="fontBold">Matias</p>
+            <p class="fontNormal">"Celebro y felicito al <br> equipo por compartirnos <br> sus experiencias, saberes y <br> tanto conocimiento"</p>
+            </div>
+            <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-03.png" alt="">
+                <p class="fontBold">Camila</p>
+                <p class="fontNormal">"Muchas gracias por la <br> corrección y consejos que me <br> brindaron!! La verdad que <br> me hicieron de gran ayuda"</p>
+             </div>
+             <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-08.png" alt="">
+                
+                <p class="fontBold">
+                    Matias
+                </p>
+                <p class="fontNormal">“Gracias por el contenido <br> de valor, posta me re sirve <br> para mejorar mi perfil <br> profesional”</p>
+            </div>
+            <div class="swiper-slide"> <img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-01.png" alt=""> 
+                <p class="fontBold">Yoana</p>
+                <p class="fontNormal">“Contraté el servicio de <br> elaboración de cv con devolución <br> personalizada y la verdad es que <br> superó mis expectativas. Destaco <br> mucho la gran dedicación y <br> amabilidad de todos”</p>
+            </div>
+          
+        </div>
+        
+        <div class="swiper-pagination"></div>
+      </div>
+      </section>
+      <section>
+          <div>
+              <div class="contTitulo">
+                  <h1 class="fontBold tituloOrientar" >Te orientamos en el mundo laboral</h1>
+                  <h1 class="fontBold tituloOrientar">¡Grandes oportunidades te esperan!</h1>
+                  <p class="fontNormal textoOrientar">Envianos tu consulta y nos pondremos en contacto a la brevedad.</p>
+              </div >
+              <form>
+                <div class="row col-md-7">
+                  <div class="form-group col-md-5 ">
+                   
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre y Apellido">
+                  </div>
+                  <div class="form-group col-md-5 ">
+                    
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Empresa">
+                  </div>
+                  <div class="form-group col-md-5">
+                   
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-5">
+                   
+                    <input type="tel" class="form-control" id="inputEmail4" placeholder="Telefono">
+                  </div>
+                  <div class="form-group">
+                    
+                    <textarea class="form-control col-md-5" id="exampleFormControlTextarea1" rows="3" placeholder="Escribí tu consulta acá"></textarea>
+                  </div>
+                  <button type="submit" class="btn ">Sign in</button>
+                </div>
+                
+                  </div>
+                </div>
+                
+              </form>
+              
+          </div>
+      </section>
+       <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img width="60" src="../assets/images/isotipo-enlazar.png" alt="Logo Consultora Enlazar">
+            </div>
+            <div class="footer-left">
+                <ul class="footer-left__list">
+                    <!-- <li><img width="50" src="../assets/images/isotipo-enlazar-blanco.png" alt="Logo Consultora Enlazar"></li> -->
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-middle">
+                <ul class="footer-middle__list">
+                    <li><a href="#">Cursos y Talleres</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <ul class="footer-right__list">
+                    <li>Descubrí nuestra comunidad</li>
+                    <li><a href="#"><img class="instagram-logo" src="../assets/images/logo-instagram.svg"
+                                alt="Logo instagram"></a></li>
+                    <li><a href="#"><img class="twitter-logo" src="../assets/images/logo-twitter.svg"
+                                alt="Logo twitter"></a></li>
+                    <li><a href="#"><img class="telegram-logo" src="../assets/images/logo-telegram.svg"
+                                alt="Logo telegram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <address class="address">Buenos Aires, Argentina</address>
+    </footer>
+    <div>
+        <a href="https://wa.me/5492214987653/?text=Hola Conexion Cafe, quería realizarles una consulta..."
+            target="_blank">
+            <img class="whatsapp-icon" src="../assets/images/whatsapp-icono.png" alt="Logo WhatsApp">
+        </a>
+    </div>
+
+
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+      
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
     <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>
