@@ -19,6 +19,7 @@
   --fuente-principal: "Noah Text";
   --azul-claro: #bac9ce;
   --azul-medio: #34668a;
+  --azul-oscuro: #043959;
   --amarillo: #ebbe48;
   --negro: #000000;
   --blanco: #ffffff;
@@ -114,13 +115,13 @@
   transform: scale(1.02);
   opacity: 0.9;
 }
-.card:hover img{
-    transform: scale(1.2) translateY(5em);
-    filter: grayscale(100%);
-    z-index: -1;
+.card:hover img {
+  transform: scale(1.2) translateY(5em);
+  filter: grayscale(100%);
+  z-index: -1;
 }
-.card:hover .card-title{
-    transform: translateY(-10em);
+.card:hover .card-title {
+  transform: translateY(-10em);
 }
 .card-image {
   width: 70%;
@@ -230,6 +231,7 @@
   height: 3em;
   width: 3em;
   filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
+  z-index: 10;
 }
 .whatsapp-icon:hover {
   transform: scale(1.1);
@@ -250,6 +252,7 @@
   visibility: hidden;
   opacity: 0;
   transition: ease-in-out 0.5s;
+  z-index: 10;
 }
 .active {
   bottom: 1.5em;
@@ -336,40 +339,252 @@
 }
 /* -----Fin Modals----- */
 
-
-/* -----Pagina comunidad----- */
-
-/* -----Inicio Subheader----- */
-.subheader-container-comunity{
+/* -----Pagina COMUNIDAD----- */
+/* -----Inicio Subheader o Seccion de Instagram----- */
+.subheader-container-comunity {
   position: relative;
   /* max-height: 340px; */
   display: flex;
   flex-direction: column;
   padding: 5rem 0;
 }
-.letter-e-image__comunity{
+.letter-e-image__comunity {
   position: absolute;
   width: 17rem;
   top: 21em;
   left: -8em;
 }
-.subheader-comunity__text{
+.subheader-comunity__text {
   font-weight: bold;
 }
-.btn-ir-ahora{
+.btn-ir-ahora {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5em;
   width: 12em;
   transition: ease-in-out 0.3s;
 }
-.btn-ir-ahora:hover{
+.btn-ir-ahora:hover {
   transform: scale(1.02);
 }
-.subheader-comunity__img{
+.subheader-comunity__img {
   width: 7em;
   transition: ease-in-out 0.2s;
 }
-.subheader-comunity__img:hover{
+.subheader-comunity__img:hover {
   transform: translateY(-5px);
 }
+/* -----Fin Subheader o Seccion de Instagram----- */
+
+/* -----Inicio Seccion de Telegram----- */
+.section-telegram__container {
+  background-color: var(--azul-claro);
+  padding-top: 10em;
+  padding-bottom: 16em;
+  padding-left: 9em;
+}
+.section-telegram__container h3 {
+  font-weight: bold;
+}
+.section-telegram__container span {
+  font-weight: bold;
+  display: block;
+}
+.section-telegram__list {
+  padding-left: 1rem;
+}
+.btn-ser-parte {
+  margin-top: 4em;
+}
+/* -----Fin Seccion de Telegram----- */
+
+/* Pagina NOSOTROS */
+/* Inicio Header */
+.header-container__nosotros {
+  padding: 25px;
+  background: var(--azul-claro);
+}
+.header-title__nosotros {
+  padding: 5rem 4rem 2rem 5rem;
+  color: var(--azul-oscuro);
+  font-weight: bold;
+}
+.header-text__nosotros {
+  font-size: 0.95rem;
+  font-weight: normal;
+  line-height: 30px;
+  max-width: 68%;
+  padding: 0rem 4rem 5rem 5rem;
+  margin-bottom: 0;
+}
+/* Fin Header */
+
+/* Inicio Equipo */
+.section-team__container {
+  background-color: var(--azul-medio);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.section-team__direccion-title {
+  color: var(--amarillo);
+  font-weight: bold;
+  margin-bottom: 3em;
+}
+.card-person {
+  color: var(--blanco);
+  transition: ease-in-out 0.5s;
+}
+.card-person__title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+.card-person__img {
+  /* width: 12em; */
+  max-width: 80%;
+  filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
+  transition: ease-in-out 0.5s;
+}
+.card-person:hover {
+  transform: perspective(15cm) rotateX(0deg) rotateY(20deg);
+  /* filter: drop-shadow(-5px 5px 4px rgba(0, 0, 0, 0.25)); */
+}
+.card-person:hover img {
+  filter: drop-shadow(-5px 5px 4px rgba(0, 0, 0, 0.25));
+}
+.card-person p {
+  transition: ease-in-out 0.5s;
+  opacity: 0;
+}
+.card-person:hover p {
+  opacity: 1;
+}
+/* Fin Equipo */
+
+/* Inicio Slider Otros de equipo */
+.section-other-team__container {
+  background-color: var(--azul-medio);
+}
+.other-team__title {
+  color: var(--amarillo);
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+.card-person p {
+  font-size: 0.9rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--azul-medio);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  /* display: block; */
+  /* width: 100%; */
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--amarillo);
+}
+/* Fin Slider Otros de equipo */
+
+/* Inicio Nuestros valores */
+.nuestros-valores__title {
+  font-weight: bold;
+  color: var(--azul-oscuro);
+  padding: 5rem 4rem 2rem 5rem;
+}
+/* Fin Nuestros valores */
+
+/* Inicio Trabaja con nosotros */
+.section-trabaja-nosotros__container {
+  background-color: var(--azul-claro);
+}
+.trabaja-nosotros__row {
+  padding: 7em;
+}
+.trabaja-nosotros__image {
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+}
+.trabaja-nosotros__title {
+  font-weight: bold;
+  color: var(--azul-oscuro);
+}
+/* Inicio Modal CARGAR MI CV */
+.modal-content__trabaja-nosotros {
+  background-color: var(--blanco);
+  border-radius: 10px;
+}
+
+.modal-content__trabaja-nosotros {
+  padding-top: 4em;
+}
+.modal-title__trabaja-nosotros {
+  color: var(--azul-oscuro);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.input__name,
+.input__tel,
+.input__email,
+.textarea__mensaje{
+  padding: 0.8em 1em;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.textarea__mensaje{
+  resize: none;
+}
+.input__attachment::file-selector-button{
+  background: var(--amarillo);
+  border: none;
+  padding: .5em 1em;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.input__attachment::file-selector-button:hover{
+  transform: scale(0.96);
+  opacity: 0.8;
+}
+.modal-footer__trabaja-nosotros {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  border-top: none;
+}
+.modal-footer__trabaja-nosotros h3{
+  color: var(--azul-oscuro);
+  font-weight: bold;
+}
+.modal-footer__trabaja-nosotros p{
+  font-size: 1.3rem;
+  color: var(--negro);
+  font-weight: bold;
+}
+/* FIn Modal CARGAR MI CV */
+/* Fin Trabaja con nosotros */
