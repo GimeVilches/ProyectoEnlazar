@@ -1,4 +1,4 @@
-/* -----Fuente principal de la pagina----- */
+/* -----FUENTE PRINCIPAL DE LA PAGINA----- */
 @font-face {
   font-family: "Noah Text";
   src: url("../assets/fonts/noah-text-regular.woff");
@@ -14,7 +14,7 @@
   font-weight: 300;
 }
 
-/* -----Variables----- */
+/* -----VARIABLES----- */
 :root {
   --fuente-principal: "Noah Text";
   --azul-claro: #bac9ce;
@@ -30,11 +30,16 @@
   font-weight: normal;
 }
 
+
+/* -----Pagina CURSOS Y TALLERES----- */
 /* -----Inicio Navbar----- */
 .navbar-custom {
   background-color: var(--blanco);
   box-shadow: 0 3px 4px rgba(0, 0, 0, 8%);
   padding: 1rem 0;
+}
+.nav-link__instagram-linkedin{
+  filter: invert(19%) sepia(26%) saturate(2374%) hue-rotate(167deg) brightness(91%) contrast(100%);
 }
 /* -----Fin Navbar----- */
 
@@ -55,7 +60,7 @@
 }
 .header-title {
   color: var(--blanco);
-  padding: 0 9rem;
+  padding: 0 1rem;
   font-weight: bold;
   font-size: 1.9rem;
   text-align: center;
@@ -100,7 +105,7 @@
 .section-cards__container {
   background-color: var(--azul-claro);
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 .card {
   background-color: var(--azul-medio);
@@ -114,14 +119,6 @@
 .card:hover {
   transform: scale(1.02);
   opacity: 0.9;
-}
-.card:hover img {
-  transform: scale(1.2) translateY(5em);
-  filter: grayscale(100%);
-  z-index: -1;
-}
-.card:hover .card-title {
-  transform: translateY(-10em);
 }
 .card-image {
   width: 70%;
@@ -200,7 +197,7 @@
   list-style: none;
   color: var(--blanco);
   margin-bottom: 0;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0 0.5rem 2rem;
 }
 .footer-right__list li {
   padding: 0 0.6rem;
@@ -245,9 +242,6 @@
   right: 6em;
   height: 3em;
   width: 3em;
-  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
-  filter: invert(90%) sepia(74%) saturate(3294%) hue-rotate(319deg)
-    brightness(95%) contrast(93%);
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
@@ -339,6 +333,7 @@
 }
 /* -----Fin Modals----- */
 
+
 /* -----Pagina COMUNIDAD----- */
 /* -----Inicio Subheader o Seccion de Instagram----- */
 .subheader-container-comunity {
@@ -371,14 +366,15 @@
   width: 7em;
   transition: ease-in-out 0.2s;
 }
-.subheader-comunity__img:hover {
-  transform: translateY(-5px);
-}
 /* -----Fin Subheader o Seccion de Instagram----- */
 
 /* -----Inicio Seccion de Telegram----- */
 .section-telegram__container {
   background-color: var(--azul-claro);
+  background-image: url(..//assets/images/avioncito.gif);
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
   padding-top: 10em;
   padding-bottom: 16em;
   padding-left: 9em;
@@ -396,10 +392,14 @@
 .btn-ser-parte {
   margin-top: 4em;
 }
+.gif-avioncito{
+  display: flex;
+}
 /* -----Fin Seccion de Telegram----- */
 
-/* Pagina NOSOTROS */
-/* Inicio Header */
+
+/* -----Pagina NOSOTROS----- */
+/* -----Inicio Header----- */
 .header-container__nosotros {
   padding: 25px;
   background: var(--azul-claro);
@@ -417,9 +417,9 @@
   padding: 0rem 4rem 5rem 5rem;
   margin-bottom: 0;
 }
-/* Fin Header */
+/* -----Fin Header----- */
 
-/* Inicio Equipo */
+/* -----Inicio Equipo----- */
 .section-team__container {
   background-color: var(--azul-medio);
   padding-top: 10rem;
@@ -446,13 +446,6 @@
   filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
   transition: ease-in-out 0.5s;
 }
-.card-person:hover {
-  transform: perspective(15cm) rotateX(0deg) rotateY(20deg);
-  /* filter: drop-shadow(-5px 5px 4px rgba(0, 0, 0, 0.25)); */
-}
-.card-person:hover img {
-  filter: drop-shadow(-5px 5px 4px rgba(0, 0, 0, 0.25));
-}
 .card-person p {
   transition: ease-in-out 0.5s;
   opacity: 0;
@@ -460,9 +453,9 @@
 .card-person:hover p {
   opacity: 1;
 }
-/* Fin Equipo */
+/* -----Fin Equipo----- */
 
-/* Inicio Slider Otros de equipo */
+/* -----Inicio Slider Otros de equipo----- */
 .section-other-team__container {
   background-color: var(--azul-medio);
 }
@@ -498,7 +491,6 @@
   -webkit-align-items: center;
   align-items: center;
 }
-
 .swiper-slide img {
   /* display: block; */
   /* width: 100%; */
@@ -509,17 +501,20 @@
 .swiper-button-prev::after {
   color: var(--amarillo);
 }
-/* Fin Slider Otros de equipo */
+.col-custom-cm{
+  width: 28%;
+}
+/* -----Fin Slider Otros de equipo----- */
 
-/* Inicio Nuestros valores */
+/* -----Inicio Nuestros valores----- */
 .nuestros-valores__title {
   font-weight: bold;
   color: var(--azul-oscuro);
   padding: 5rem 4rem 2rem 5rem;
 }
-/* Fin Nuestros valores */
+/* -----Fin Nuestros valores----- */
 
-/* Inicio Trabaja con nosotros */
+/* -----Inicio Trabaja con nosotros----- */
 .section-trabaja-nosotros__container {
   background-color: var(--azul-claro);
 }
@@ -533,7 +528,9 @@
   font-weight: bold;
   color: var(--azul-oscuro);
 }
-/* Inicio Modal CARGAR MI CV */
+/* -----Fin Trabaja con nosotros----- */
+
+/* -----Inicio Modal CARGAR MI CV----- */
 .modal-content__trabaja-nosotros {
   background-color: var(--blanco);
   border-radius: 10px;
@@ -547,6 +544,9 @@
   font-weight: bold;
   font-size: 1.8rem;
 }
+.modal-body__trabaja-nosotros{
+  display: flex;
+}
 .input__name,
 .input__tel,
 .input__email,
@@ -558,25 +558,32 @@
 .textarea__mensaje{
   resize: none;
 }
-.input__attachment::file-selector-button{
-  background: var(--amarillo);
-  border: none;
-  padding: .5em 1em;
-  border-radius: 10px;
+.label-cargar-cv{
+  background-color: transparent;
+  border: 2px solid var(--amarillo);
+  border-radius: 1.2em;
+  padding: 0.2rem 2rem;
+  font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
 }
-.input__attachment::file-selector-button:hover{
-  transform: scale(0.96);
-  opacity: 0.8;
+.label-cargar-cv:hover{
+  transform: scale(0.98);
 }
-.modal-footer__trabaja-nosotros {
+.span-cargar-cv{
+  display: block;
+  color: #ff0000;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* .modal-footer__trabaja-nosotros {
   display: none;
   flex-direction: column;
   align-items: center;
   padding: 2em;
   border-top: none;
-}
+} */
 .modal-footer__trabaja-nosotros h3{
   color: var(--azul-oscuro);
   font-weight: bold;
@@ -586,5 +593,174 @@
   color: var(--negro);
   font-weight: bold;
 }
-/* FIn Modal CARGAR MI CV */
-/* Fin Trabaja con nosotros */
+.swal2-title{
+  color: var(--azul-oscuro) !important;
+}
+/* -----Fin Modal CARGAR MI CV----- */
+
+
+/* -----Pagina PARTICULARES Y GRUPOS----- */
+/* -----Inicio Header----- */
+.header-image__particulares{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/portada-individuos-grupos.webp");
+  background-position: top center; /*3rem*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+/* -----Fin Header----- */
+
+/* -----Inicio Seccion CARDS particulares----- */
+.container-cards__particulares{
+  padding: 5em 0;
+}
+.container-card__particulares{
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+}
+.container-card__particulares:hover{
+  transform: scale(1.04);
+}
+.card__particulares-container-image{
+  height: 100%;
+  background-color: var(--azul-claro);
+}
+.card__particulares-image{
+  width: 5em;
+  height: 100%;
+  margin: 0 2em;
+}
+.card__particulares-text{
+  padding: 0 1em;
+}
+.card__particulares-title{
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 2rem 0 0.6rem 1rem;
+  margin-bottom: 0;
+}
+.card__particulares-negrita{
+  font-weight: bold;
+}
+.card__particulares-paragraph{
+  font-size: 14px;
+  padding: 1rem 1rem;
+}
+.button-card__particulares{
+  padding: 0.2rem 1.2rem;
+  margin-bottom: 1em;
+}
+/* -----Fin Seccion CARDS particulares----- */
+
+
+/* -----Pagina EMPRESAS----- */
+/* -----Inicio Header----- */
+.header-image__empresas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/portada-empresas.webp");
+  background-position: top center; /*3rem*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+/* -----Fin Header----- */
+
+
+
+/* -----COMIENZO DE MEDIA QUERIES----- */
+/* ---Pagina CURSOS Y TALLERES--- */
+@media screen and (max-width: 890px) {
+  .subheader-container{
+    text-align: center;
+    align-items: center;
+    max-height: none;
+  }
+  .subheader-text{
+    margin: 2rem 4rem 2rem 4rem;
+  }
+}
+@media screen and (max-width: 1055px) {
+  .footer-right__list{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .footer-container{
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    padding-bottom: 20px;
+  }
+  .footer-logo{
+    padding: 0.8rem 0 1rem 0;
+  }
+  .footer-left{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-left__list{
+    flex-wrap: wrap;
+    /* padding: 0; */
+    border: none;
+  }
+  .footer-middle__list{
+    padding: 0 0 0 0;
+    border: none;
+  }
+}
+@media screen and (max-width: 586px) {
+  .footer-logo{
+    padding: 0;
+  }
+  .footer-left__list{
+    padding: 0 2rem 0 0;
+  }
+  .footer-middle__list{
+    padding: 0 1rem 0 1rem;
+  }
+  .footer-right__list{
+    padding: 0.5rem 0 0.5rem 0rem;;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer-container{
+    height: auto;
+  }
+  .footer-logo{
+    padding-top: 1rem;
+  }
+  .footer-left{
+    width: 100%;
+  }
+  .footer-left__list{
+    padding: 0;
+    flex-direction: column;
+  }
+  .footer-left__list li{
+    border-right: none;
+    padding: 1rem 0.6rem;
+  }
+  .footer-left__list li:last-child{
+    padding: 1rem 0.6rem 2.5rem 0.6rem;
+  }
+  .footer-middle{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+  .footer-right{
+    width: 100%;
+  }
+  .footer-right__list li:first-child{
+    display: none;
+  }
+}

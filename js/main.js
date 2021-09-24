@@ -1,9 +1,5 @@
 let scrollBoton = document.querySelector(".arrow-icon"); //Variable que apunta al boton de subir al top
 let enviarCv = document.getElementById("botoncitoPaProbrar");
-let agregarClase = document.querySelector(".modal-footer__trabaja-nosotros");
-let eliminarBody = document.querySelector(".modal-body__trabaja-nosotros");
-let inputName = document.getElementById("inputName");
-let inputTel = document.getElementById("inputTel");
 
 //Funcion de subir al top con boton
 addEventListener('scroll', () => {
@@ -17,43 +13,35 @@ scrollBoton.addEventListener('click', () => {
 })
 
 
+//Boton envio de formulario
+function submitForm(form) {
+    Swal.fire({
+        title: 'Tu currículum a sido enviado con éxito.',
+        text: 'Nos pondremos en contacto a la brevedad.',
+        imageUrl: '../assets/images/consulta-enviada-con-exito.gif',
+        imageWidth: 200,
+        imageHeight: 150,
+        imageAlt: 'Consulta enviada',
+        width: '45em',
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+    })
+        .then((isOk) => {
+            if (isOk) {
+                form.submit();
+            }
+        });
+    return false
+}
 
-//probando el botoncito
 
-const form = document.getElementById("formito");
+//Boton carga de CV
+const cargarBtn = document.getElementById('cargarCv');
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    agregarClase.style.display = 'flex';
-    eliminarBody.style.display = 'none';
-    form.submit(() => {
-        setTimeout(() => {
+const fileChosen = document.getElementById('file-chosen');
 
-        }, 10000);
-        return true;
-    });
-
+cargarBtn.addEventListener('change', function(){
+  fileChosen.textContent = "CV cargado con exito"
+  fileChosen.style.color = "green";
 })
-
-/* enviarCv.addEventListener('submit', (e) => {
-    e.preventDefault();
-    agregarClase.style.display = 'flex';
-    eliminarBody.style.display = 'none';
-    setTimeout(function () {
-        fetch("https://formsubmit.co/ajax/your@email.com", {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify({
-                name: "FormSubmit",
-                message: "I'm from Devro LABS"
-            })
-        })
-            .then(response => response.json())
-            .then(data => console.log(data))
-            .catch(error => console.log(error));
-        // window.location = "nosotros.html";
-    }, 4000);
-}) */

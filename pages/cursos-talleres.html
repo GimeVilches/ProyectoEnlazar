@@ -14,8 +14,7 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
-        <!--fixed-top-->
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="../assets/images/logo-enlazar.svg" alt="" width="200" height="50">
@@ -26,26 +25,26 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Nosotros</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Servicios</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Cursos & Talleres</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Comunidad</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-row justify-content-evenly">
                     <li class="nav-item">
                         <a class="nav-link" href="#"><img src="../assets/images/logo-instagram.svg" alt="Logo Instagram"
                                 width="20"></a>
@@ -58,6 +57,14 @@
                         <a class="nav-link" href="#"><img src="../assets/images/logo-telegram.svg" alt="Logo Telegram"
                                 width="20"></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-link__instagram-linkedin"
+                                src="../assets/images/logo-linkedin.svg" alt="Logo Linkedin" width="20"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-link__instagram-linkedin"
+                                src="../assets/images/logo-facebook.svg" alt="Logo Facebook" width="20"></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -66,18 +73,14 @@
     <!-- HEADER -->
     <header class="header container-fluid">
         <div class="header-image">
-            <h1 class="header-title">Todo largo camino, comienza con el primer paso... <br>
+            <h1 class="header-title">Todo largo camino comienza con el primer paso... <br>
                 Comenzá hoy a prepararte para el futuro.</h1>
         </div>
     </header>
 
     <!-- SUBHEADER -->
     <section class="subheader-container">
-        <p class="subheader-text"> <span> Uno de nuestros compromisos es con la educación. </span> En un mundo que
-            avanza tan rápido es fundamental mantenerse
-            actualizado, informado y capacitado, por eso buscamos acercar el mejor conocimiento para todos los niveles,
-            desde los primeros acercamientos a un tema hasta los que ya son profesionales y quieren continuar
-            capacitándose.</p>
+        <p class="subheader-text"> <span> Uno de nuestros compromisos es con la educación. </span> En un mundo que avanza con tanta rapidez, es fundamental mantenerse actualizado, informado y capacitado. Es por eso que buscamos brindar conocimientos de alto nivel en nuestras distintas capacitaciones, en diversos niveles, desde quien está dando sus primeros pasos hasta aquellos profesionales que buscan continuar capacitándose.</p>
         <img class="subheader-image" src="../assets/images/flecha-doble.svg" alt="Flecha doble">
         <img class="letter-e-image" src="../assets/images/letra-e.png" alt="">
     </section>
@@ -86,9 +89,9 @@
     <!-- Los MODALS los ubicamos en la linea 313 -->
     <section class="section-cards__container container-fluid">
         <!-- Primera fila de cursos -->
-        <div class="row d-flex justify-content-center pb-5">
+        <div class="row d-flex justify-content-center pb-0 pb-md-0">
             <!-- Primer columna de cursos -->
-            <div class="d-flex justify-content-center col-lg-3">
+            <div class="d-flex justify-content-center col-md-4 col-lg-3 pb-lg-5 pb-5">
                 <!-- Inicio de CARD Webinars & Workshops-->
                 <div class="card text-center" style="width: 18rem;">
                     <img src="../assets/images/curso-webinars-gratis.webp" class="card-image card-img-top"
@@ -103,7 +106,7 @@
                 <!-- Fin de CARD Webinars & Workshops -->
             </div>
             <!-- Segunda columna de cursos -->
-            <div class="d-flex justify-content-center col-lg-3">
+            <div class="d-flex justify-content-center col-md-4 col-lg-3 pb-lg-5 pb-5">
                 <!-- Inicio de CARD -->
                 <div class="card text-center" style="width: 18rem;">
                     <img src="../assets/images/curso-seleccion-personal.webp" class="card-image card-img-top"
@@ -118,7 +121,7 @@
                 <!-- Fin de CARD -->
             </div>
             <!-- Tercera columna de cursos -->
-            <div class="d-flex justify-content-center col-lg-3">
+            <div class="d-flex justify-content-center col-md-4 col-lg-3 pb-lg-5 pb-5">
                 <!-- Inicio de CARD -->
                 <div class="card text-center" style="width: 18rem;">
                     <img src="../assets/images/curso-personal-it.webp" class="card-image card-img-top"
@@ -133,9 +136,9 @@
             <!-- Fin de CARD -->
         </div>
         <!-- Segunda fila de cursos -->
-        <div class="row d-flex justify-content-center py-5">
+        <div class="row d-flex justify-content-center py-0 py-md-0">
             <!-- Primera columna de cursos -->
-            <div class="d-flex justify-content-center col-lg-3">
+            <div class="d-flex justify-content-center col-md-4 col-lg-3 pb-lg-5 pb-5">
                 <!-- Inicio de CARD -->
                 <div class="card text-center" style="width: 18rem;">
                     <img src="../assets/images/curso-coaching.webp" class="card-image card-img-top"
@@ -150,7 +153,7 @@
                 <!-- Fin de CARD -->
             </div>
             <!-- Segunda columna de cursos -->
-            <div class="d-flex justify-content-center col-lg-3">
+            <div class="d-flex justify-content-center col-md-4 col-lg-3 pb-lg-5 pb-5">
                 <!-- Inicio de CARD -->
                 <div class="card text-center" style="width: 18rem;">
                     <img src="../assets/images/curso-orientacion-laboral.webp" class="card-image card-img-top"
@@ -165,7 +168,7 @@
                 <!-- Fin de CARD -->
             </div>
             <!-- Tercera columna de cursos -->
-            <div class="d-flex justify-content-center col-lg-3">
+            <div class="d-flex justify-content-center col-md-4 col-lg-3 pb-lg-5 pb-5">
                 <!-- Inicio de CARD -->
                 <div class="card text-center" style="width: 18rem;">
                     <img src="../assets/images/curso-scrum.webp" class="card-image card-img-top" alt="Cursos gratuitos">
@@ -180,9 +183,9 @@
             </div>
         </div>
         <!-- Tercera fila de cursos -->
-        <div class="row d-flex justify-content-center py-5">
+        <div class="row d-flex justify-content-center py-0 py-md-0">
             <!-- Primera columna de cursos -->
-            <div class="d-flex justify-content-center col-lg-3">
+            <div class="d-flex justify-content-center col-md-4 col-lg-3 pb-lg-5 pb-5">
                 <!-- Inicio de CARD -->
                 <div class="card text-center" style="width: 18rem;">
                     <img src="../assets/images/curso-insercion-laboral.webp" class="card-image card-img-top"
@@ -197,7 +200,7 @@
                 <!-- Fin de CARD -->
             </div>
             <!-- Segunda columna de cursos -->
-            <div class="d-flex justify-content-center col-lg-3">
+            <div class="d-flex justify-content-center col-md-4 col-lg-3 pb-lg-5 pb-5">
                 <!-- Inicio de CARD -->
                 <div class="card text-center" style="width: 18rem;">
                     <img src="../assets/images/curso-asistente-rrhh.webp" class="card-image card-img-top"
@@ -212,7 +215,7 @@
                 <!-- Fin de CARD -->
             </div>
             <!-- Tercera columna de cursos -->
-            <div class="d-flex justify-content-center col-lg-3">
+            <div class="d-flex justify-content-center col-md-4 col-lg-3 pb-lg-5 pb-5">
                 <!-- Inicio de CARD -->
                 <div class="card text-center" style="width: 18rem;">
                     <img src="../assets/images/curso-liderazgo-gestion-equipos.webp" class="card-image card-img-top"
@@ -228,9 +231,9 @@
             </div>
         </div>
         <!-- Cuarta fila de cursos -->
-        <div class="row d-flex justify-content-center pt-5">
+        <div class="row d-flex justify-content-center pt-0 py-md-0">
             <!-- Primera columna de cursos -->
-            <div class="d-flex justify-content-center col-lg-3">
+            <div class="d-flex justify-content-center col-md-4 col-lg-3 pb-lg-5 pb-5">
                 <!-- Inicio de CARD -->
                 <div class="card text-center" style="width: 18rem;">
                     <img src="../assets/images/curso-inteligencia-emocional.webp" class="card-image card-img-top"
@@ -245,14 +248,14 @@
                 <!-- Fin de CARD -->
             </div>
             <!-- Segunda columna de cursos -->
-            <div class="d-flex justify-content-center col-lg-3">
+            <div class="d-flex justify-content-center col-md-4 col-lg-3 pb-lg-5 pb-5">
                 <!-- Inicio de CARD -->
                 <div class="card text-center" style="width: 18rem;">
                     <img src="../assets/images/curso-pnl.webp" class="card-image card-img-top" alt="Cursos gratuitos">
                     <div class="card-body">
                         <h5 class="card-title">PNL: Programación <br>
                             neurolingüística</h5>
-                            <a data-bs-toggle="modal" data-bs-target="#pnlModal" id="btn-open-modal"
+                        <a data-bs-toggle="modal" data-bs-target="#pnlModal" id="btn-open-modal"
                             class="button-card btn">¡Quiero + info!</a>
                     </div>
                 </div>
@@ -269,7 +272,6 @@
             </div>
             <div class="footer-left">
                 <ul class="footer-left__list">
-                    <!-- <li><img width="50" src="../assets/images/isotipo-enlazar-blanco.png" alt="Logo Consultora Enlazar"></li> -->
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Comunidad</a></li>
@@ -289,6 +291,10 @@
                     <li><a href="#"><img class="twitter-logo" src="../assets/images/logo-twitter.svg"
                                 alt="Logo twitter"></a></li>
                     <li><a href="#"><img class="telegram-logo" src="../assets/images/logo-telegram.svg"
+                                alt="Logo telegram"></a></li>
+                    <li><a href="#"><img class="telegram-logo" src="../assets/images/logo-facebook.svg"
+                                alt="Logo telegram"></a></li>
+                    <li><a href="#"><img class="telegram-logo" src="../assets/images/logo-linkedin.svg"
                                 alt="Logo telegram"></a></li>
                 </ul>
             </div>
@@ -541,7 +547,8 @@
                 </div>
                 <div class="modal-footer">
                     <a class="button-card btn download-program">Descargar programa</a>
-                    <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847b62931d017bf6b1a3297752" class="button-card btn">Comprar</a>
+                    <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847b62931d017bf6b1a3297752"
+                        class="button-card btn">Comprar</a>
                     <button type="button" class="button-card btn">Me interesa</button>
                 </div>
             </div>
@@ -625,7 +632,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="../assets/videos/programa-coaching.pdf" target="_blank" class="button-card btn download-program">Descargar programa</a>
+                    <a href="../assets/videos/programa-coaching.pdf" target="_blank"
+                        class="button-card btn download-program">Descargar programa</a>
                     <a href="https://mpago.la/2bYW4h7" class="button-card btn">Comprar</a>
                     <button type="button" class="button-card btn">Me interesa</button>
                 </div>
@@ -1074,8 +1082,7 @@
     <!-- Fin Modal Inteligencia emocional -->
 
     <!-- Inico Modal PNL: Programación neurolingüística -->
-    <div class="modal fade" id="pnlModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="pnlModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered  modal-xl">
             <div class="modal-content">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1083,8 +1090,8 @@
                     <h5 class="modal-title" id="exampleModalLabel">PNL: Programación neurolingüística</h5>
                 </div>
                 <div class="modal-body">
-                    <div class="modal-body__image"> <img class="image-left"
-                            src="../assets/images/curso-pnl.webp" alt=""></div>
+                    <div class="modal-body__image"> <img class="image-left" src="../assets/images/curso-pnl.webp"
+                            alt=""></div>
                     <div class="modal-body__text">
                         <ul class="modal-body__list">
                             <li>
