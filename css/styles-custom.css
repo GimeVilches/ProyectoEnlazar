@@ -261,7 +261,7 @@ min-height: 500px;
     font-size: 20px;
     margin-right: 120px;
 }
-.row {
+.row1 {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -270,7 +270,7 @@ min-height: 500px;
   margin-right: 2rem;
   margin-left: 28rem;
  
-  justify-content: right;
+  justify-content: right !important;
 }
 .col-md-5 {
   flex: 0 0 auto;
@@ -296,7 +296,7 @@ min-height: 500px;
   border-radius: 100px;
   width: 280px;
   margin-top: 5px;
-  margin-bottom: 20px;
+  
   
  
 }
@@ -311,6 +311,10 @@ textarea.form-control {
  bottom: 550px;
   right: 100px;
 }
+.contenedorForm{
+  height: 80%;
+  margin-bottom: -100px;
+}
 .footer {
   background: linear-gradient(180deg, #043959 0%, #34668a 100%);
 }
@@ -319,6 +323,7 @@ textarea.form-control {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 70px;
   
 }
 /* Footer Logo */
@@ -358,7 +363,7 @@ textarea.form-control {
 }
 .footer-middle__list a {
   text-decoration: none;
-  color: var(--blanco);
+  
   color: white;
 }
 /* Footer right */
@@ -401,11 +406,157 @@ textarea.form-control {
   height: 3em;
   width: 3em;
   filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
-  margin-bottom: 180px;
+ 
 }
 .whatsapp-icon:hover {
   transform: scale(1.1);
 }
 /* -----Fin WhatsApp boton----- */
     
+.header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/servicios-cover.jpg");
+  background-position: top center; /*3rem*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  justify-items: center;
+  
+}
+.header {
+  height: 70vh;
+  padding: 0;
+}
+.header-title {
+  color:white;
+  padding: 0 1rem;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.serviciosTitulo{
+  text-align: left;
+  font-size: 25px;
+  margin-left: 20px;
 
+}
+.section-cards__container {
+  background-color: #BAC9CE;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  
+}
+.card {
+  background-color: #34668A;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  transition: ease-in-out 0.4s;
+  margin: 30px;
+ 
+}
+.card:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+.card-image {
+  width: 70%;
+  align-self: center;
+  transition: 0.3s;
+}
+.card-body {
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  
+}
+.card-title {
+  margin-bottom: 1.5rem;
+  transition: 0.3s;
+}
+.button-card {
+  background-color:#EBBE48;
+  border-radius: 1.2em;
+  padding: 0.2rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+  margin-right: 0  !important;
+  margin-left: 0  !important;
+}
+.btn {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #323232;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: #EBBE48;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: 100px;
+  width: 180px !important;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.header-image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/revision-cv-gratis.jpg");
+  background-position: top center; /*3rem*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  flex-direction: column;
+}
+.header-title1 {
+  color:white;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/Vector\ \(4\).png");
+  background-position: top center; /*3rem*/
+  background-size: 900px;
+  background-repeat: no-repeat;
+  height: 70vh;
+  justify-items: center;
+  background-color: white;
+  margin-top: 100px;
+  
+  
+}
+.header-title2 {
+  color:#34668A;
+  padding: 0 1rem;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 0;
+  display: block;
+}
