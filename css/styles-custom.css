@@ -49,10 +49,12 @@
   align-items: center;
   justify-content: center;
   background: url("../assets/images/fotito.png");
-  background-position: top center; /*3rem*/
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 65vh;
+  position: relative;
+  top: 5rem;
 }
 .header {
   height: 70vh;
@@ -72,15 +74,15 @@
 /* -----Inicio Subheader----- */
 .subheader-container {
   position: relative;
-  max-height: 340px;
+  /* max-height: 340px; */
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
 }
 .subheader-text {
   font-weight: normal;
-  max-width: 55%;
-  margin: 5rem 4rem 5rem 5rem;
+  max-width: 50%;
+  margin: 7rem 4rem 5rem 5rem;
 }
 .subheader-text span {
   font-weight: bold;
@@ -128,6 +130,12 @@
 .card-body {
   color: var(--blanco);
   padding: 1rem 1rem 2rem 1rem;
+}
+.body-card__one-line{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .card-title {
   margin-bottom: 1.5rem;
@@ -286,6 +294,25 @@
   width: 570px;
   z-index: 1;
 }
+.nav-item__custom-tab{
+  z-index: 50;
+}
+.nav-tabs{
+  border: none;
+  padding-bottom: 2rem;
+}
+.nav-link__custom-tab{
+  color: var(--blanco);
+  font-weight: bold;
+  border: 2px solid var(--amarillo) !important;
+  border-radius: 1rem 1rem 0 0 !important;
+}
+.nav-link__custom-tab.active{
+  background-color: var(--amarillo) !important;
+}
+.nav-link__custom-tab:hover{
+  color: var(--amarillo);
+}
 .modal-body__image {
   align-self: baseline;
   z-index: 2;
@@ -294,7 +321,7 @@
 .image-left {
   width: 12em;
 }
-.modal-body li {
+.modal-body__list li{
   color: var(--blanco);
   font-weight: normal;
   list-style-image: url(../assets/images/flecha.svg);
@@ -306,6 +333,12 @@
   border-top: none;
   padding: 2em;
   justify-content: space-around;
+}
+.modal-footer__webinars{
+  border-top: none;
+  padding: 2em;
+  display: flex;
+  justify-content: right;
 }
 .btn-close {
   background: transparent url(../assets/images/x-cerrar.svg);
@@ -336,12 +369,23 @@
 
 /* -----Pagina COMUNIDAD----- */
 /* -----Inicio Subheader o Seccion de Instagram----- */
+.header-image__comunidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/portada-comunidad.webp");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  position: relative;
+  top: 5rem;
+}
 .subheader-container-comunity {
   position: relative;
-  /* max-height: 340px; */
   display: flex;
   flex-direction: column;
-  padding: 5rem 0;
+  padding: 7rem 0;
 }
 .letter-e-image__comunity {
   position: absolute;
@@ -401,7 +445,7 @@
 /* -----Pagina NOSOTROS----- */
 /* -----Inicio Header----- */
 .header-container__nosotros {
-  padding: 25px;
+  padding: 8rem 1.5rem 1.5rem 1.5rem;
   background: var(--azul-claro);
 }
 .header-title__nosotros {
@@ -441,23 +485,19 @@
   margin-bottom: 0rem;
 }
 .card-person__img {
-  /* width: 12em; */
-  max-width: 80%;
+  max-width: 85%;
   filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
   transition: ease-in-out 0.5s;
 }
-.card-person p {
-  transition: ease-in-out 0.5s;
-  opacity: 0;
-}
-.card-person:hover p {
-  opacity: 1;
-}
+
 /* -----Fin Equipo----- */
 
 /* -----Inicio Slider Otros de equipo----- */
 .section-other-team__container {
   background-color: var(--azul-medio);
+}
+.card-person__img-other{
+  max-width: 75%;
 }
 .other-team__title {
   color: var(--amarillo);
@@ -501,9 +541,6 @@
 .swiper-button-prev::after {
   color: var(--amarillo);
 }
-.col-custom-cm{
-  width: 28%;
-}
 /* -----Fin Slider Otros de equipo----- */
 
 /* -----Inicio Nuestros valores----- */
@@ -511,6 +548,9 @@
   font-weight: bold;
   color: var(--azul-oscuro);
   padding: 5rem 4rem 2rem 5rem;
+}
+.nuestros-valores__text-mobile{
+  display: none;
 }
 /* -----Fin Nuestros valores----- */
 
@@ -678,6 +718,12 @@
 
 
 /* -----COMIENZO DE MEDIA QUERIES----- */
+/* ---Boton al Top--- */
+@media screen and (max-width: 500px) {
+  .arrow-icon{
+    display: none;
+  }
+}
 /* ---Pagina CURSOS Y TALLERES--- */
 @media screen and (max-width: 890px) {
   .subheader-container{
@@ -686,7 +732,8 @@
     max-height: none;
   }
   .subheader-text{
-    margin: 2rem 4rem 2rem 4rem;
+    margin: 0rem 4rem 2rem 4rem;
+    padding-top: 5rem;
   }
 }
 @media screen and (max-width: 1055px) {
@@ -715,6 +762,12 @@
   .footer-middle__list{
     padding: 0 0 0 0;
     border: none;
+  }
+  .nav-item__custom-tab{
+    width: 100%;
+  }
+  .nav-link__custom-tab{
+    width: 100%;
   }
 }
 @media screen and (max-width: 586px) {
@@ -762,5 +815,116 @@
   }
   .footer-right__list li:first-child{
     display: none;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .modal-custom__xl{
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 576px){
+  .modal-custom__xl{
+    max-width: 80%;
+  }
+  .modal-body::before{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 900px){
+  .modal-body::before{
+    display: none;
+  }
+  .modal-header{
+    border-bottom: 2px solid var(--amarillo);
+  }
+  .modal-body{
+    flex-direction: column;
+  }
+  .modal-body__image{
+    align-self: auto;
+    margin: 1rem 3rem 1rem 3rem;
+  }
+  .modal-footer{
+    flex-direction: column;
+    padding: 0em 2em 30px 2em
+  }
+}
+
+/* ----- Pagina COMUNIDAD ----- */
+@media screen and (max-width: 620px){
+  .subheader-image{
+    padding-bottom: 0px;
+  }
+  .subheader-comunity__text{
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .section-telegram__container{
+    text-align: center;
+    padding-left: 0;
+  }
+  .section-telegram__list{
+    list-style-type: none;
+  }
+  .section-telegram__container h3{
+    margin-bottom: 2rem;
+  }
+  .btn-ser-parte{
+    margin-top: 2rem;
+  }
+}
+
+/* ----- Pagina NOSOTROS ----- */
+@media screen and (max-width: 760px){
+  .header-title__nosotros{
+    text-align: center;
+    padding: 2rem;
+  }
+  .header-text__nosotros{
+    text-align: center;
+    max-width: none;
+    padding: 0rem 3rem 3rem 3rem;
+  }
+  .section-team__container{
+    padding: 7rem 0;
+  }
+  .section-team__direccion-title{
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
+@media screen and (max-width: 975px){
+  .section-nuestros-valores__container{
+    padding: 3rem 0;
+  }
+  .nuestros-valores__image{
+    display: none;
+  }
+  .nuestros-valores__title{
+    text-align: center;
+    margin: 0;
+    padding: 0 0 2.5rem 0;
+  }
+  .nuestros-valores__text-mobile{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .nuestros-valores__text-mobile ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nuestros-valores__text-mobile li{
+    padding-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px){
+  .trabaja-nosotros__row{
+    padding: 3rem;
+  }
+  .trabaja-nosotros__title{
+    text-align: center;
   }
 }

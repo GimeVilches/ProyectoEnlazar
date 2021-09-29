@@ -16,8 +16,7 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-custom navbar-expand-lg navbar-light">
-        <!--fixed-top-->
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="../assets/images/logo-enlazar.svg" alt="" width="200" height="50">
@@ -28,26 +27,26 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Nosotros</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Servicios</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Cursos & Talleres</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Comunidad</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-row justify-content-evenly">
                     <li class="nav-item">
                         <a class="nav-link" href="#"><img src="../assets/images/logo-instagram.svg" alt="Logo Instagram"
                                 width="20"></a>
@@ -59,6 +58,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><img src="../assets/images/logo-telegram.svg" alt="Logo Telegram"
                                 width="20"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-link__instagram-linkedin"
+                                src="../assets/images/logo-linkedin.svg" alt="Logo Linkedin" width="20"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-link__instagram-linkedin"
+                                src="../assets/images/logo-facebook.svg" alt="Logo Facebook" width="20"></a>
                     </li>
                 </ul>
             </div>
@@ -82,7 +89,7 @@
         </div>
         <div class="container">
             <div class="row justify-content-evenly">
-                <div class="col-3">
+                <div class="col-8 col-md-4 col-lg-3">
                     <div class="text-center card-person">
                         <img class="card-person__img" src="../assets/images/equipo-lucas-tortonese.webp"
                             alt="Lucas Tortonese">
@@ -90,7 +97,7 @@
                         <p>Co-Fundador y Director Ejecutivo</p>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-8 col-md-4 col-lg-3">
                     <div class="text-center card-person">
                         <img class="card-person__img" src="../assets/images/equipo-camila-marcotegui.webp"
                             alt="Camila Marcotegui">
@@ -98,7 +105,7 @@
                         <p>Directora de Operaciones</p>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-8 col-md-4 col-lg-3">
                     <div class="text-center card-person">
                         <img class="card-person__img" src="../assets/images/equipo-facundo-vega.webp"
                             alt="Ezequiel Facundo Vega">
@@ -114,7 +121,7 @@
     <section class="section-other-team__container container-fluid">
         <!-- Comienzo Slider -->
         <div class="swiper mySwiper container">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper d-flex align-items-center">
                 <!-- Slider Profesionales -->
                 <div class="swiper-slide d-flex flex-column">
                     <div class="row">
@@ -122,10 +129,11 @@
                             <h2 class="other-team__title">Profesionales</h2>
                         </div>
                     </div>
-                    <div class="row justify-content-evenly">
-                        <div class="col-3">
+                    <div class="row container justify-content-evenly">
+                        <div class="col-8 col-lg-4">
                             <div class="text-center card-person">
-                                <img class="card-person__img" src="../assets/images/equipo-mathias-de-la-palenque.webp"
+                                <img class="card-person__img-other"
+                                    src="../assets/images/equipo-mathias-de-la-palenque.webp"
                                     alt="Mathias De La Palenque">
                                 <h4 class="card-person__title">MATHIAS DE LA PALENQUE</h4>
                                 <p>Lic. en Psicología UBA
@@ -134,9 +142,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-8 col-lg-4">
                             <div class="text-center card-person">
-                                <img class="card-person__img" src="../assets/images/equipo-matias-garcia-bielicki.webp"
+                                <img class="card-person__img-other"
+                                    src="../assets/images/equipo-matias-garcia-bielicki.webp"
                                     alt="Matias Garcia Bielicki">
                                 <h4 class="text-center card-person__title">MATÍAS GARCÍA BIELICKI</h4>
                                 <p>Est. Lic. en Psicología UBA
@@ -154,29 +163,28 @@
                                 <h2 class="other-team__title">Colaboradores</h2>
                             </div>
                         </div>
-                        <div class="row justify-content-evenly">
-                            <div class="col-3">
+                        <div class="row container justify-content-evenly">
+                            <div class="col-8 col-lg-4">
                                 <div class="text-center card-person">
-                                    <img class="card-person__img"
-                                        src="../assets/images/equipo-mathias-de-la-palenque.webp"
-                                        alt="Mathias De La Palenque">
-                                    <h4 class="card-person__title">COLABORADOR</h4>
-                                    <p>Lorem ipsum dolor, sit amet consectetur.
+                                    <img class="card-person__img-other"
+                                        src="../assets/images/equipo-luciana-magliotto.webp" alt="Luciana Magliotto">
+                                    <h4 class="card-person__title">LUCIANA MAGLIOTTO</h4>
+                                    <p>Licenciada en Relaciones de Trabajo. UNM
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-8 col-lg-4">
                                 <div class="text-center card-person">
-                                    <img class="card-person__img"
+                                    <img class="card-person__img-other"
                                         src="../assets/images/equipo-matias-garcia-bielicki.webp"
-                                        alt="Matias Garcia Bielicki">
-                                    <h4 class="text-center card-person__title">COLABORADOR</h4>
-                                    <p>Lorem ipsum dolor, sit amet consectetur.</p>
+                                        alt="Maria Laura Cabral">
+                                    <h4 class="text-center card-person__title">MARIA LAURA CABRAL</h4>
+                                    <p>Estudiante de Relaciones de Trabajo. UBA</p>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-8 col-lg-4">
                                 <div class="text-center card-person">
-                                    <img class="card-person__img"
+                                    <img class="card-person__img-other"
                                         src="../assets/images/equipo-matias-garcia-bielicki.webp"
                                         alt="Matias Garcia Bielicki">
                                     <h4 class="text-center card-person__title">COLABORADOR</h4>
@@ -194,11 +202,11 @@
                                 <h2 class="other-team__title">Comunicación & redes</h2>
                             </div>
                         </div>
-                        <div class="row justify-content-evenly">
-                            <div class="col-3 col-custom-cm">
+                        <div class="row container justify-content-evenly">
+                            <div class="col-8 col-lg-4">
                                 <div class="text-center card-person">
-                                    <img class="card-person__img" src="../assets/images/curso-asistente-rrhh.webp"
-                                        alt="Martina Carrrion">
+                                    <img class="card-person__img-other" src="../assets/images/curso-asistente-rrhh.webp"
+                                        alt="Martina Carrion">
                                     <h4 class="card-person__title">MARTINA CARRIÓN</h4>
                                     <p>Community Manager
                                     </p>
@@ -215,26 +223,27 @@
                                 <h2 class="other-team__title">Equipo IT</h2>
                             </div>
                         </div>
-                        <div class="row justify-content-evenly">
-                            <div class="col-3">
+                        <div class="row container justify-content-evenly">
+                            <div class="col-8 col-lg-4">
                                 <div class="text-center card-person">
-                                    <img class="card-person__img" src="../assets/images/curso-asistente-rrhh.webp"
-                                        alt="Mathias De La Palenque">
+                                    <img class="card-person__img-other" src="../assets/images/equipo-priscila-resl.webp"
+                                        alt="Priscila Resl">
                                     <h4 class="card-person__title">PRISCILA RESL</h4>
                                     <p>Diseño UX | UI
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-8 col-lg-4">
                                 <div class="text-center card-person">
-                                    <img class="card-person__img" src="../assets/images/tincho.png" alt="Martin Zotti">
+                                    <img class="card-person__img-other"
+                                        src="../assets/images/equipo-matias-garcia-bielicki.webp" alt="Martin Zotti">
                                     <h4 class="text-center card-person__title">MARTÍN ZOTTI</h4>
                                     <p>Desarrollo Web</p>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-8 col-lg-4">
                                 <div class="text-center card-person">
-                                    <img class="card-person__img" src="../assets/images/curso-asistente-rrhh.webp"
+                                    <img class="card-person__img-other" src="../assets/images/curso-asistente-rrhh.webp"
                                         alt="Gimena Vilches">
                                     <h4 class="text-center card-person__title">GIMENA VILCHES</h4>
                                     <p>Desarrollo Web</p>
@@ -252,9 +261,19 @@
     <!-- Seccion NUESTROS VALORES -->
     <section class="section-nuestros-valores__container container-fluid">
         <h3 class="nuestros-valores__title">Nuestros valores</h3>
-        <div class="row d-flex justify-content-center">
-            <div class="col-10">
-                <img class="container" src="../assets/images/nuetros-valores.gif" alt="Nuetros valores">
+        <div class="row d-flex justify-content-center mx-0">
+            <div class="col-10 text-center">
+                <img class="container nuestros-valores__image" src="../assets/images/nuetros-valores.gif"
+                    alt="Nuetros valores">
+            </div>
+            <div class="nuestros-valores__text-mobile">
+                <ul>
+                    <li>Responsabilidad & Calidad de trabajo</li>
+                    <li>Transparencia & Profesionalismo</li>
+                    <li>Innovación & Creatividad</li>
+                    <li>Eficiencia & Trabajo colaborativo</li>
+                    <li>Empatía & asistencia</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -262,13 +281,13 @@
     <!-- Seccion TRABAJA CON NOSOTROS -->
     <section class="section-trabaja-nosotros__container container-fluid">
         <div class="trabaja-nosotros__row row d-flex justify-content-center align-items-center">
-            <div class="col-4">
-                <img class="container trabaja-nosotros__image" src="../assets/images/trabaja-con-nosotros.webp"
-                    alt="Nuetros valores">
+            <div class="col-8 col-md-6 col-lg-4">
+                <img class="img-fluid trabaja-nosotros__image" src="../assets/images/trabaja-con-nosotros.webp"
+                    alt="Trabaja con nosotros">
             </div>
-            <div class="col-6 d-flex flex-column align-items-start">
+            <div class="col-10 col-md-6 d-flex flex-column align-items-md-start align-items-center">
                 <h3 class="trabaja-nosotros__title">¡Trabajá con nosotros!</h3>
-                <p>Constantemente estamos ampliando nuestra red de profesionales.
+                <p class="text-center text-md-start">Constantemente estamos ampliando nuestra red de profesionales.
                     Si te sentís identificado/a con nuestra organización, puedes dejarnos
                     tu CV y lo tendremos en cuenta para futuras búsquedas.</p>
                 <a data-bs-toggle="modal" data-bs-target="#trabajaConNosotrosModal" id="btn-open-modal"
@@ -290,7 +309,7 @@
                 <div class="modal-body__trabaja-nosotros">
                     <form onsubmit="return submitForm(this);"
                         class="modal-body__form d-flex flex-column align-items-center"
-                        action="https://formsubmit.co/tinchoz8426@gmail.com" method="POST"
+                        action="https://formsubmit.co/consultora.enlazar@gmail.com" method="POST"
                         enctype="multipart/form-data">
                         <div class="d-flex justify-content-between my-3 w-100">
                             <input class="input__name" type="text" name="Nombre y Apellido"
@@ -308,7 +327,7 @@
                             <div class="d-flex flex-column align-items-center">
                                 <label class="label-cargar-cv" for="cargarCv">cargar archivo</label>
                                 <input id="cargarCv" class="input__attachment" type="file" name="attachment"
-                                    accept="application/pdf" required hidden>
+                                    accept="application/pdf, .doc,.docx,application/msword" required hidden>
                                 <span id="file-chosen" class="span-cargar-cv">No se eligió un archivo</span>
                             </div>
                             <div>
@@ -317,7 +336,7 @@
                         </div>
 
                         <!-- inputs hidden -->
-                        <input type="hidden" name="_subject" value="¡Adjuntaron un CV!">
+                        <input type="hidden" name="_subject" value="Talentos">
                         <input type="hidden" name="_template" value="box">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://google.com.ar">
@@ -340,7 +359,6 @@
             </div>
             <div class="footer-left">
                 <ul class="footer-left__list">
-                    <!-- <li><img width="50" src="../assets/images/isotipo-enlazar-blanco.png" alt="Logo Consultora Enlazar"></li> -->
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Comunidad</a></li>
@@ -360,6 +378,10 @@
                     <li><a href="#"><img class="twitter-logo" src="../assets/images/logo-twitter.svg"
                                 alt="Logo twitter"></a></li>
                     <li><a href="#"><img class="telegram-logo" src="../assets/images/logo-telegram.svg"
+                                alt="Logo telegram"></a></li>
+                    <li><a href="#"><img class="telegram-logo" src="../assets/images/logo-facebook.svg"
+                                alt="Logo telegram"></a></li>
+                    <li><a href="#"><img class="telegram-logo" src="../assets/images/logo-linkedin.svg"
                                 alt="Logo telegram"></a></li>
                 </ul>
             </div>
@@ -385,18 +407,18 @@
     <!-- Script BOOTSTRAP -->
     <script src="../js/bootstrap.bundle.js"></script>
 
-    <!-- wisper prueba -->
+    <!-- Script WISPER -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
-      </script>
-    
+    </script>
+
     <!-- CDN Sweet Alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
