@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="../assets/images/logo-enlazar.svg" alt="" width="200" height="50">
@@ -20,27 +20,27 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Nosotros</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
+                    <li class="nav-item py-3">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Cursos & Talleres</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Comunidad</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item py-3">
                         <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-row justify-content-evenly">
                     <li class="nav-item">
                         <a class="nav-link" href="#"><img src="../assets/images/logo-instagram.svg" alt="Logo Instagram"
                                 width="20"></a>
@@ -52,6 +52,14 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><img src="../assets/images/logo-telegram.svg" alt="Logo Telegram"
                                 width="20"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-link__instagram-linkedin"
+                                src="../assets/images/logo-linkedin.svg" alt="Logo Linkedin" width="20"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="nav-link__instagram-linkedin"
+                                src="../assets/images/logo-facebook.svg" alt="Logo Facebook" width="20"></a>
                     </li>
                 </ul>
             </div>
@@ -97,7 +105,7 @@
               <p class="textoConocenos fontNormal"> Nuestros servicios están fundados en la calidad de información, actualización y transmisión.</p>
               <br>
             </div>
-            <button class="buttonConocenos fontBold">CONOCÉ NUESTROS SERVICIOS</button>
+            <button  class="buttonConocenos fontBold" href="servicios.html" >CONOCÉ NUESTROS SERVICIOS</button>
             <img class="flechaDoble" src="../assets/images/Vector.png" alt="Imagen flecha">
             </div>
            
@@ -121,80 +129,213 @@
               <h2 class="acompañamos2">Garantizamos tu aprendizaje.</h2>
             </div>
       </section>
-      <section>
-          <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-08.png" alt="">
-                
-                <p class="fontBold">
-                    Diego
-                </p>
-                <p class="fontNormal">“Muchas gracias, sin duda <br> son la mejor página. <br> Todos sus consejos <br> son de mucho valor”</p>
+      
+        <section class="section-other-team__container container-fluid">
+            <!-- Comienzo Slider -->
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper">
+                    <!-- Slider Profesionales -->
+                    <div class="swiper-slide d-flex flex-column">
+                        <div class="row3">
+                            
+                        </div>
+                        <div class="row container justify-content-evenly">
+                            <div class="col-8 col-lg-3">
+                                <div class="text-center card-person">
+                                    <img class="card-person__img-other" src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-08.png" alt="">
+                                    <h4 class="card-person__title fontBold">Diego</h4>
+                                    <p class="fontNormal">“Muchas gracias, sin duda <br> son la mejor página. <br> Todos sus consejos <br> son de mucho valor”
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-3">
+                                <div class="text-center card-person">
+                                    <img class="card-person__img-other" src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-01.png" alt=""
+                                        alt="Matias Garcia Bielicki">
+                                    <h4 class="text-center card-person__title fontBold">Sofía</h4>
+                                    <p class="fontNormal">“Gracias Enlazar por <br> darme una mano con mi <br> CV, increible la mejora y el <br> asesoramiento”</p>
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-3">
+                                <div class="text-center card-person">
+                                    <img class="card-person__img-other" src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-05.png" alt="">
+                                    <h4 class="card-person__title fontBold">Jona</h4>
+                                    <p class="fontNormal">“Les agradezco por la <br> buena onda y el gran <br> trabajo”
+                                    </p>
+                                </div>
+                            </div>
+
+                            
+
+
+
+
+
+                        </div>
+
+
+
+                    </div>
+                 
+                    <div class="swiper-slide">
+                        <div class="swiper-slide d-flex flex-column">
+                            <div class="row3">
+                                
+                            </div>
+                            <div class="row container justify-content-evenly">
+                                <div class="col-8 col-lg-3">
+                                    <div class="text-center card-person">
+                                        <img class="card-person__img-other"
+                                            src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-07.png" alt=""
+                                            alt="Luciana Magliotto">
+                                        <h4 class="card-person__title fontBold">Diego</h4>
+                                        <p class="fontNormal">“Me fue bien en la entrevista, <br> me llamaron y arranco en <br> breve. Me ayudaron <br> muchísimo con sus tips”
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-8 col-lg-3">
+                                    <div class="text-center card-person">
+                                        <img class="card-person__img-other"
+                                            src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-06.png" alt=""
+                                            alt="Maria Laura Cabral">
+                                        <h4 class="text-center card-person__title">Nicolas</h4>
+                                        <p>"Muy buena la información <br> que comparten, ayuda a <br> mucha gente"</p>
+                                    </div>
+                                </div>
+                                <div class="col-8 col-lg-3">
+                                    <div class="text-center card-person">
+                                        <img class="card-person__img-other"
+                                            src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-04.png" alt=""
+                                            alt="Matias Garcia Bielicki">
+                                        <h4 class="text-center card-person__title fontBold">Florencia</h4>
+                                        <p class="fontNormal">"Que buen material! <br> Agradezco estar acá"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide d-flex flex-column">
+                            <div class="row3">
+                                
+                            </div>
+                            <div class="row container justify-content-evenly">
+                                <div class="col-8 col-lg-3">
+                                    <div class="text-center card-person">
+                                        <img class="card-person__img-other"
+                                            src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-05.png" alt="">
+                                           
+                                        <h4 class="card-person__title fontBold">Juan Pablo</h4>
+                                        <p class="fontNormal">"Gracias por la posibilidad de <br> este espacio y por poder ser <br> miembro de la comunidad. <br> Valoro mucho el buen trato y <br> la información que nos pasan"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-8 col-lg-3">
+                                    <div class="text-center card-person">
+                                        <img class="card-person__img-other"
+                                            src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-07.png" alt="">
+                                            
+                                        <h4 class="text-center card-person__title">George</h4>
+                                        <p>"Hola, quiero agradecer <br> por toda la info, está <br> buenisima"</p>
+                                    </div>
+                                </div>
+                                <div class="col-8 col-lg-3">
+                                    <div class="text-center card-person">
+                                        <img class="card-person__img-other"
+                                            src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-03.png" alt="">
+                                           
+                                        <h4 class="text-center card-person__title fontBold">Rosmily</h4>
+                                        <p class="fontNormal">"Excelente el espacio que <br> brinda, muchas gracias <br> por la dedicación. Un <br> placer formar parte"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide d-flex flex-column">
+                            <div class="row3">
+                                
+                            </div>
+                            <div class="row container justify-content-evenly">
+                                <div class="col-8 col-lg-3">
+                                    <div class="text-center card-person">
+                                        <img class="card-person__img-other"
+                                            src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-02.png" alt="">
+                                           
+                                        <h4 class="card-person__title fontBold">Florencia
+
+                                        </h4>
+                                        <p class="fontNormal">"Me ayuda mucho el <br> acompañamiento que <br> brindan, la motivación y <br> los consejos"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-8 col-lg-3">
+                                    <div class="text-center card-person">
+                                        <img class="card-person__img-other"
+                                            src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-06.png" alt="">
+                                            
+                                        <h4 class="text-center card-person__title">Matias</h4>
+                                        <p>"Hola, quiero agradecer <br> por toda la info, está <br> buenisima"</p>
+                                    </div>
+                                </div>
+                                <div class="col-8 col-lg-3">
+                                    <div class="text-center card-person">
+                                        <img class="card-person__img-other"
+                                            src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-03.png" alt="">
+                                           
+                                        <h4 class="text-center card-person__title fontBold">Camila
+                                        
+                                        </h4>
+                                        <p class="fontNormal">"Muchas gracias por la <br> corrección y consejos que me <br> brindaron!! La verdad que <br> me hicieron de gran ayuda"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-slide d-flex flex-column">
+                            <div class="row3">
+                                
+                            </div>
+                            <div class="row container justify-content-evenly">
+                                <div class="col-8 col-lg-3">
+                                    <div class="text-center card-person">
+                                        <img class="card-person__img-other"
+                                            src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-08.png" alt="">
+                                           
+                                        <h4 class="card-person__title fontBold">Matias
+
+                                        </h4>
+                                        <p class="fontNormal">“Gracias por el contenido <br> de valor, posta me re sirve <br> para mejorar mi perfil <br> profesional”
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-8 col-lg-3">
+                                    <div class="text-center card-person">
+                                        <img class="card-person__img-other"
+                                            src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-01.png" alt=""> 
+                                            
+                                        <h4 class="text-center card-person__title">Yoana</h4>
+                                        <p>“Contraté el servicio de <br> elaboración de cv con devolución <br> personalizada y la verdad es que <br> superó mis expectativas. Destaco <br> mucho la gran dedicación y <br> amabilidad de todos”</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+             
+                    
             </div>
-          <div class="swiper-slide"> <img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-01.png" alt=""> 
-            <p class="fontBold">Sofía</p>
-            <p class="fontNormal">“Gracias Enlazar por <br> darme una mano con mi <br> CV, increible la mejora y el <br> asesoramiento”</p>
-        </div>
-        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-05.png" alt="">
-        <p class="fontBold">Jona</p>
-        <p class="fontNormal">“Les agradezco por la <br> buena onda y el gran <br> trabajo”</p>
-        </div>
-        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-07.png" alt="">
-        <p class="fontBold">Diego</p>
-        <p class="fontNormal">“Me fue bien en la entrevista, <br> me llamaron y arranco en <br> breve. Me ayudaron <br> muchísimo con sus tips”</p>
-        </div>
-        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-06.png" alt="">
-        <p class="fontBold">Nicolás</p>
-        <p class="fontNormal">"Muy buena la información <br> que comparten, ayuda a <br> mucha gente"</p>
-        </div>
-        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-04.png" alt="">
-        <p class="fontBold">Florencia</p>
-        <p class="fontNormal">"Que buen material! <br> Agradezco estar acá"</p>
-        </div>
-        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-05.png" alt="">
-        
-        <p class="fontBold">Juan Pablo</p>
-        <p class="fontNormal">"Gracias por la posibilidad de <br> este espacio y por poder ser <br> miembro de la comunidad. <br> Valoro mucho el buen trato y <br> la información que nos pasan"</p>
-        </div>
-        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-07.png" alt="">
-        <p class="fontBold">George</p>
-        <p class="fontNormal">"Hola, quiero agradecer <br> por toda la info, está <br> buenisima"</p>
-        </div>  
-        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-03.png" alt="">
-        <p class="fontBold">Rosmily</p>
-        <p class="fontNormal">"Excelente el espacio que <br> brinda, muchas gracias <br> por la dedicación. Un <br> placer formar parte"</p>
-        </div>
-          <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-02.png" alt="">
-            <p class="fontBold">Florencia</p>
-            <p class="FontNormal">"Me ayuda mucho el <br> acompañamiento que <br> brindan, la motivación y <br> los consejos" </p>
-        </div>
-        <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-06.png" alt="">
-            <p class="fontBold">Matias</p>
-            <p class="fontNormal">"Celebro y felicito al <br> equipo por compartirnos <br> sus experiencias, saberes y <br> tanto conocimiento"</p>
-            </div>
-            <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-03.png" alt="">
-                <p class="fontBold">Camila</p>
-                <p class="fontNormal">"Muchas gracias por la <br> corrección y consejos que me <br> brindaron!! La verdad que <br> me hicieron de gran ayuda"</p>
-             </div>
-             <div class="swiper-slide"><img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-08.png" alt="">
-                
-                <p class="fontBold">
-                    Matias
-                </p>
-                <p class="fontNormal">“Gracias por el contenido <br> de valor, posta me re sirve <br> para mejorar mi perfil <br> profesional”</p>
-            </div>
-            <div class="swiper-slide"> <img src="../assets/images/testimonios-20210914T133251Z-001/testimonios/users-01.png" alt=""> 
-                <p class="fontBold">Yoana</p>
-                <p class="fontNormal">“Contraté el servicio de <br> elaboración de cv con devolución <br> personalizada y la verdad es que <br> superó mis expectativas. Destaco <br> mucho la gran dedicación y <br> amabilidad de todos”</p>
-            </div>
-          
-        </div>
-        
-        <div class="swiper-pagination"></div>
-      </div>
-      </section>
-      <section>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+            </div
+    </section>
+     
+        <section>
 
           <div class="contenedorForm">
               <div class="contTitulo">
@@ -238,14 +379,13 @@
           </div>
       </section>
        <!-- FOOTER -->
-    <footer class="footer">
+       <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
-                <img width="60" src="../assets/images/isotipo-enlazar.png" alt="Logo Consultora Enlazar">
+                <img width="60" src="../assets/images/isotipo-enlazar-blanco.png" alt="Logo Consultora Enlazar">
             </div>
             <div class="footer-left">
                 <ul class="footer-left__list">
-                    <!-- <li><img width="50" src="../assets/images/isotipo-enlazar-blanco.png" alt="Logo Consultora Enlazar"></li> -->
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Comunidad</a></li>
@@ -266,6 +406,10 @@
                                 alt="Logo twitter"></a></li>
                     <li><a href="#"><img class="telegram-logo" src="../assets/images/logo-telegram.svg"
                                 alt="Logo telegram"></a></li>
+                    <li><a href="#"><img class="telegram-logo" src="../assets/images/logo-facebook.svg"
+                                alt="Logo telegram"></a></li>
+                    <li><a href="#"><img class="telegram-logo" src="../assets/images/logo-linkedin.svg"
+                                alt="Logo telegram"></a></li>
                 </ul>
             </div>
         </div>
@@ -280,18 +424,18 @@
 
 
       <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-      
-      <script>
+      <!-- Script WISPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
         var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 4,
-          spaceBetween: 30,
-          freeMode: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
           },
         });
       </script>
+      
     <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>
