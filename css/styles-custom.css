@@ -30,6 +30,310 @@
   font-weight: normal;
 }
 
+/* ---Eliminado de los botones el focus de Bootstrap--- */
+.btn:focus {
+  box-shadow: none;
+}
+
+/*  -----Pagina INICIO----- */
+/* -----Inicio HEADER VIDEO----- */
+.header-index {
+  height: 76vh;
+}
+.header-video__home {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 6rem;
+  bottom: 0;
+  z-index: -1;
+}
+/* -----Fin HEADER VIDEO----- */
+
+/* -----Inicio SOMOS ENLAZAR----- */
+.section-enlazar__index {
+  padding-top: 3.2rem;
+}
+.somosEnlazar {
+  background-color: #043959;
+  width: 100%;
+  height: 500px;
+  margin-top: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.tituloEnlazar {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 50px;
+  line-height: 50px;
+  margin-left: 50px;
+}
+.textoSomos {
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  width: 50%;
+  padding-left: 50px;
+}
+.textoSomos span {
+  font-weight: bold;
+}
+.fotoEnlazar {
+  width: 28%;
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 850px;
+}
+/* -----Fin SOMOS ENLAZAR----- */
+
+/* -----Inicio Seccion NUESTRO OBJETIVO----- */
+.nuestroObjetivo {
+  background-color: #34668a;
+  width: 100%;
+  height: 398px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.tituloObjetivo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 100px;
+  line-height: 50px;
+  margin-left: 700px;
+}
+.textoObjetivo {
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  width: 40%;
+
+  margin-left: 700px;
+  position: absolute;
+}
+.fotoObjetivo {
+  width: 40.4%;
+  display: block;
+  position: absolute;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+/* -----Fin Seccion NUESTRO OBJETIVO----- */
+
+/* -----Inicio Seccion CONOCE NUESTROS SERVICIOS----- */
+.container-conoce-nuestros-servicios {
+  background-color: var(--azul-claro);
+}
+.conocenos {
+  padding-top: 10rem;
+}
+.tituloConocenos {
+  font-size: 30px;
+  font-weight: bold;
+}
+.textoConocenos {
+  font-size: 15px;
+}
+.container-flecha__nuestros-servicios {
+  padding: 4rem;
+}
+.letter-e-image__nuestros-servicios {
+  position: absolute;
+  width: 17rem;
+  top: 83rem;
+  right: 0;
+}
+.letter-e-dos-image__nuestros-servicios {
+  position: absolute;
+  width: 17rem;
+  top: 106rem;
+  left: 0;
+}
+/* -----Fin Seccion CONOCE NUESTROS SERVICIOS----- */
+
+/* -----Inicio Seccion APRENDE CON NOSOTROS----- */
+.bannerAprende {
+  background-image: url("../assets/images/aprende-con-nosotros.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  padding: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.tituloAprende {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.textoAprende {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+}
+.buttonAprende:hover {
+  transform: scale(1.02);
+  color: var(--negro);
+}
+/* -----Fin Seccion APRENDE CON NOSOTROS----- */
+
+/* -----Inicio TESTIMONIOS----- */
+.teAcompañamos {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+.acompañamos1 {
+  text-align: center;
+  color: var(--negro);
+  font-weight: bold;
+}
+.acompañamos2 {
+  text-align: center;
+  color: var(--azul-medio);
+  font-weight: bold;
+}
+.swiper-slide__testimonios {
+  background-color: white !important;
+}
+.card-person__testimonio {
+  color: var(--negro);
+}
+/* -----Fin TESTIMONIOS----- */
+
+/* -----Inicio Seccion FORMULARIO----- */
+.letter-form-index {
+  position: absolute;
+  width: 28rem;
+  top: 200rem;
+  left: 0;
+}
+.form-consulta {
+  width: 50%;
+  padding-right: 6rem;
+}
+.form-consulta h2 {
+  color: var(--azul-oscuro);
+}
+.button-form-consulta {
+  background-color: var(--amarillo);
+  border-radius: 1.2em;
+  padding: 0.4rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: ease-in-out 0.2s;
+}
+.button-form-consulta:hover {
+  transform: scale(1.02);
+}
+/* -----Fin Seccion FORMULARIO----- */
+
+
+/* -----Pagina SERVICIOS----- */
+/* -----Inicio Header----- */
+.header-image-servicios-general {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/portada-servicios.webp");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  position: relative;
+  top: 5.5rem;
+}
+/* -----Fin Header----- */
+
+/* -----Inicio Seccion PARA QUIEN LOS OFRECEMOS ----- */
+.serviciosTitulo {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 10rem;
+  padding-bottom: 8rem;
+  padding-top: 2rem;
+}
+.card-body-servicios {
+  color: var(--blanco);
+  padding: 3rem 1rem 3rem 1rem;
+}
+/* -----Fin Seccion PARA QUIEN LOS OFRECEMOS ----- */
+
+/* -----Inicio Seccion REVISAMOS TU CV GRATIS ----- */
+.header-image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/revision-cv-gratis.webp");
+  background-position: top center; /*3rem*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  flex-direction: column;
+}
+.header-title1 {
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+/* -----Fin Seccion REVISAMOS TU CV GRATIS ----- */
+
+/* -----Inicio Seccion SE PARTE DEL CAPITAL HUMANO ----- */
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/letra-e-completa.png");
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin-top: 100px;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 1.6rem;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 120px;
+}
+.header-title2 span{
+  font-weight: bold;
+}
+/* -----Fin Seccion SE PARTE DEL CAPITAL HUMANO ----- */
 
 /* -----Pagina CURSOS Y TALLERES----- */
 /* -----Inicio Navbar----- */
@@ -38,8 +342,17 @@
   box-shadow: 0 3px 4px rgba(0, 0, 0, 8%);
   padding: 1rem 0;
 }
-.nav-link__instagram-linkedin{
-  filter: invert(19%) sepia(26%) saturate(2374%) hue-rotate(167deg) brightness(91%) contrast(100%);
+.nav-link__instagram-linkedin {
+  filter: invert(19%) sepia(26%) saturate(2374%) hue-rotate(167deg)
+    brightness(91%) contrast(100%);
+}
+.nav-link{
+  font-weight: bold;
+}
+.navbar .nav-link:hover {
+  color: var(--azul-oscuro) !important;
+  transform: translateY(-1px);
+  transition: all 0.2;
 }
 /* -----Fin Navbar----- */
 
@@ -48,7 +361,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../assets/images/fotito.png");
+  background: url("../assets/images/portada-cursos-talleres.webp");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -77,12 +390,12 @@
   /* max-height: 340px; */
   display: flex;
   flex-direction: column;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 .subheader-text {
   font-weight: normal;
   max-width: 50%;
-  margin: 7rem 4rem 5rem 5rem;
+  margin: 11rem 4rem 5rem 5rem;
 }
 .subheader-text span {
   font-weight: bold;
@@ -98,7 +411,7 @@
 .letter-e-image {
   position: absolute;
   width: 17rem;
-  top: 4rem;
+  top: 11rem;
   right: 0;
 }
 /* -----Fin Subheader----- */
@@ -107,7 +420,7 @@
 .section-cards__container {
   background-color: var(--azul-claro);
   padding-top: 10rem;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
 }
 .card {
   background-color: var(--azul-medio);
@@ -131,7 +444,7 @@
   color: var(--blanco);
   padding: 1rem 1rem 2rem 1rem;
 }
-.body-card__one-line{
+.body-card__one-line {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,6 +460,12 @@
   padding: 0.2rem 2rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+.btn-interesa {
+  padding: 0.2rem 4rem;
+}
+.btn-comprar {
+  padding: 0.2rem 4.7rem;
 }
 /* -----Fin Seccion CARDS de cursos----- */
 
@@ -178,6 +497,9 @@
   text-decoration: none;
   color: var(--blanco);
 }
+.footer-left__list a:hover {
+  font-weight: bold;
+}
 .footer-left__list li {
   padding: 0 0.6rem;
   border-right: 1px solid white;
@@ -196,6 +518,9 @@
 .footer-middle__list a {
   text-decoration: none;
   color: var(--blanco);
+}
+.footer-middle__list a:hover {
+  font-weight: bold;
 }
 /* Footer right */
 .footer-right__list {
@@ -218,6 +543,12 @@
 .telegram-logo {
   filter: brightness(0) invert(1);
   width: 1.5rem;
+  transition: ease-in-out 0.2s;
+}
+.instagram-logo:hover,
+.twitter-logo:hover,
+.telegram-logo:hover {
+  transform: scale(1.05);
 }
 .address {
   color: var(--blanco);
@@ -237,6 +568,7 @@
   width: 3em;
   filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.4));
   z-index: 10;
+  transition: ease-in-out 0.2s;
 }
 .whatsapp-icon:hover {
   transform: scale(1.1);
@@ -246,7 +578,7 @@
 /* -----Inicio Subir al top boton----- */
 .arrow-icon {
   position: fixed;
-  bottom: 800px;
+  bottom: 200px;
   right: 6em;
   height: 3em;
   width: 3em;
@@ -294,23 +626,23 @@
   width: 570px;
   z-index: 1;
 }
-.nav-item__custom-tab{
+.nav-item__custom-tab {
   z-index: 50;
 }
-.nav-tabs{
+.nav-tabs {
   border: none;
   padding-bottom: 2rem;
 }
-.nav-link__custom-tab{
+.nav-link__custom-tab {
   color: var(--blanco);
   font-weight: bold;
   border: 2px solid var(--amarillo) !important;
-  border-radius: 1rem 1rem 0 0 !important;
+  border-radius: 0.6rem 0.6rem 0 0 !important;
 }
-.nav-link__custom-tab.active{
+.nav-link__custom-tab.active {
   background-color: var(--amarillo) !important;
 }
-.nav-link__custom-tab:hover{
+.nav-link__custom-tab:hover {
   color: var(--amarillo);
 }
 .modal-body__image {
@@ -321,7 +653,7 @@
 .image-left {
   width: 12em;
 }
-.modal-body__list li{
+.modal-body__list li {
   color: var(--blanco);
   font-weight: normal;
   list-style-image: url(../assets/images/flecha.svg);
@@ -334,7 +666,7 @@
   padding: 2em;
   justify-content: space-around;
 }
-.modal-footer__webinars{
+.modal-footer__webinars {
   border-top: none;
   padding: 2em;
   display: flex;
@@ -366,14 +698,17 @@
 }
 /* -----Fin Modals----- */
 
-
 /* -----Pagina COMUNIDAD----- */
 /* -----Inicio Subheader o Seccion de Instagram----- */
 .header-image__comunidad {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../assets/images/portada-comunidad.webp");
+  /* background: url("../assets/images/portada-comunidad.webp"); */
+  background: -webkit-image-set(
+    url("../assets/images/portada-comunidad.webp") 1x,
+    url("../assets/images/portada-comunidad-mobile.webp") 3x
+  );
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -414,8 +749,8 @@
 
 /* -----Inicio Seccion de Telegram----- */
 .section-telegram__container {
-  background-color: var(--azul-claro);
   background-image: url(..//assets/images/avioncito.gif);
+  background-color: var(--azul-claro);
   background-position: center bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -435,12 +770,15 @@
 }
 .btn-ser-parte {
   margin-top: 4em;
+  transition: ease-in-out 0.3s;
 }
-.gif-avioncito{
+.btn-ser-parte:hover {
+  transform: scale(1.02);
+}
+.gif-avioncito {
   display: flex;
 }
 /* -----Fin Seccion de Telegram----- */
-
 
 /* -----Pagina NOSOTROS----- */
 /* -----Inicio Header----- */
@@ -457,7 +795,7 @@
   font-size: 0.95rem;
   font-weight: normal;
   line-height: 30px;
-  max-width: 68%;
+  max-width: 60%;
   padding: 0rem 4rem 5rem 5rem;
   margin-bottom: 0;
 }
@@ -467,7 +805,7 @@
 .section-team__container {
   background-color: var(--azul-medio);
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 8rem;
 }
 .section-team__direccion-title {
   color: var(--amarillo);
@@ -495,8 +833,9 @@
 /* -----Inicio Slider Otros de equipo----- */
 .section-other-team__container {
   background-color: var(--azul-medio);
+  padding-bottom: 7rem;
 }
-.card-person__img-other{
+.card-person__img-other {
   max-width: 75%;
 }
 .other-team__title {
@@ -549,8 +888,11 @@
   color: var(--azul-oscuro);
   padding: 5rem 4rem 2rem 5rem;
 }
-.nuestros-valores__text-mobile{
+.nuestros-valores__text-mobile {
   display: none;
+}
+.nuestros-valores__image {
+  padding-bottom: 7rem;
 }
 /* -----Fin Nuestros valores----- */
 
@@ -568,6 +910,13 @@
   font-weight: bold;
   color: var(--azul-oscuro);
 }
+.btn-cargar-cv {
+  padding: 0 3rem !important;
+  transition: ease-in-out 0.2s;
+}
+.btn-cargar-cv:hover {
+  transform: scale(1.05);
+}
 /* -----Fin Trabaja con nosotros----- */
 
 /* -----Inicio Modal CARGAR MI CV----- */
@@ -575,7 +924,6 @@
   background-color: var(--blanco);
   border-radius: 10px;
 }
-
 .modal-content__trabaja-nosotros {
   padding-top: 4em;
 }
@@ -584,21 +932,34 @@
   font-weight: bold;
   font-size: 1.8rem;
 }
-.modal-body__trabaja-nosotros{
+.modal-body__trabaja-nosotros {
   display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.modal-body__form {
+  width: 75%;
 }
 .input__name,
 .input__tel,
 .input__email,
-.textarea__mensaje{
+.input__empresa,
+.input__email-empresa,
+.textarea__mensaje {
   padding: 0.8em 1em;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
-.textarea__mensaje{
+.input__name,
+.input__tel,
+.input__empresa,
+.input__email-empresa {
+  width: 48%;
+}
+.textarea__mensaje {
   resize: none;
 }
-.label-cargar-cv{
+.label-cargar-cv {
   background-color: transparent;
   border: 2px solid var(--amarillo);
   border-radius: 1.2em;
@@ -607,41 +968,32 @@
   text-transform: uppercase;
   cursor: pointer;
 }
-.label-cargar-cv:hover{
+.label-cargar-cv:hover {
   transform: scale(0.98);
 }
-.span-cargar-cv{
+.span-cargar-cv {
   display: block;
   color: #ff0000;
   font-size: 0.9rem;
   font-weight: bold;
 }
-
-/* .modal-footer__trabaja-nosotros {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em;
-  border-top: none;
-} */
-.modal-footer__trabaja-nosotros h3{
+.modal-footer__trabaja-nosotros h3 {
   color: var(--azul-oscuro);
   font-weight: bold;
 }
-.modal-footer__trabaja-nosotros p{
+.modal-footer__trabaja-nosotros p {
   font-size: 1.3rem;
   color: var(--negro);
   font-weight: bold;
 }
-.swal2-title{
+.swal2-title {
   color: var(--azul-oscuro) !important;
 }
 /* -----Fin Modal CARGAR MI CV----- */
 
-
 /* -----Pagina PARTICULARES Y GRUPOS----- */
 /* -----Inicio Header----- */
-.header-image__particulares{
+.header-image__particulares {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -654,10 +1006,10 @@
 /* -----Fin Header----- */
 
 /* -----Inicio Seccion CARDS particulares----- */
-.container-cards__particulares{
+.container-cards__particulares {
   padding: 5em 0;
 }
-.container-card__particulares{
+.container-card__particulares {
   display: flex;
   align-items: center;
   max-width: 500px;
@@ -666,44 +1018,45 @@
   overflow: hidden;
   transition: ease-in-out 0.5s;
 }
-.container-card__particulares:hover{
+.container-card__particulares:hover {
   transform: scale(1.04);
 }
-.card__particulares-container-image{
+.card__particulares-container-image {
   height: 100%;
   background-color: var(--azul-claro);
 }
-.card__particulares-image{
+.card__particulares-image {
   width: 5em;
   height: 100%;
   margin: 0 2em;
 }
-.card__particulares-text{
+.card__particulares-text {
   padding: 0 1em;
+  height: 100%;
+  justify-content: space-between;
 }
-.card__particulares-title{
+.card__particulares-title {
   font-size: 1.1rem;
   font-weight: bold;
   padding: 2rem 0 0.6rem 1rem;
   margin-bottom: 0;
 }
-.card__particulares-negrita{
+.card__particulares-negrita {
   font-weight: bold;
 }
-.card__particulares-paragraph{
+.card__particulares-paragraph {
   font-size: 14px;
   padding: 1rem 1rem;
 }
-.button-card__particulares{
+.button-card__particulares {
   padding: 0.2rem 1.2rem;
   margin-bottom: 1em;
 }
 /* -----Fin Seccion CARDS particulares----- */
 
-
 /* -----Pagina EMPRESAS----- */
 /* -----Inicio Header----- */
-.header-image__empresas{
+.header-image__empresas {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -715,216 +1068,306 @@
 }
 /* -----Fin Header----- */
 
-
-
 /* -----COMIENZO DE MEDIA QUERIES----- */
+/* ---Navbar--- */
+@media screen and (max-width: 975px) {
+  .navbar-brand img {
+    width: 150px;
+  }
+}
 /* ---Boton al Top--- */
 @media screen and (max-width: 500px) {
-  .arrow-icon{
+  .arrow-icon {
     display: none;
   }
 }
+/* ---Modal Formulario--- */
+@media screen and (max-width: 1000px) {
+  .envianos-consulta__text,
+  .adjunta-cv__text {
+    padding: 0 2rem;
+  }
+  .input-div__name-tel {
+    flex-direction: column;
+  }
+  .input__name,
+  .input__tel,
+  .input__empresa,
+  .input__email-empresa {
+    width: 100%;
+  }
+  .input__name,
+  .input__email-empresa {
+    margin-bottom: 1rem;
+  }
+  .label-cargar-cv {
+    padding: 0.2rem 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .buttons-cv__footer {
+    flex-direction: column;
+    align-items: center !important;
+    align-self: unset !important;
+  }
+  .cargar-cv__div {
+    margin: 0 !important;
+  }
+  .button-enviar__margin-top {
+    margin-top: 1rem;
+    padding: 0.2rem 3.6rem;
+  }
+}
 /* ---Pagina CURSOS Y TALLERES--- */
+@media screen and (max-width: 700px) {
+  .header-image {
+    background-position: -14rem center;
+  }
+  .letter-e-image {
+    display: none;
+  }
+}
 @media screen and (max-width: 890px) {
-  .subheader-container{
-    text-align: center;
+  .subheader-container {
     align-items: center;
     max-height: none;
   }
-  .subheader-text{
+  .subheader-text {
     margin: 0rem 4rem 2rem 4rem;
     padding-top: 5rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .subheader-text {
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 1055px) {
-  .footer-right__list{
+  .footer-right__list {
     padding: 0.5rem 2rem 0.5rem 2rem;
   }
 }
 @media screen and (max-width: 1170px) {
-  .footer-container{
+  .footer-container {
     flex-wrap: wrap;
     align-content: space-evenly;
     padding-bottom: 20px;
   }
-  .footer-logo{
+  .footer-logo {
     padding: 0.8rem 0 1rem 0;
   }
-  .footer-left{
+  .footer-left {
     display: flex;
     flex-direction: column;
   }
-  .footer-left__list{
+  .footer-left__list {
     flex-wrap: wrap;
-    /* padding: 0; */
     border: none;
   }
-  .footer-middle__list{
+  .footer-middle__list {
     padding: 0 0 0 0;
     border: none;
   }
-  .nav-item__custom-tab{
+  .nav-item__custom-tab {
     width: 100%;
   }
-  .nav-link__custom-tab{
+  .nav-link__custom-tab {
     width: 100%;
   }
 }
 @media screen and (max-width: 586px) {
-  .footer-logo{
+  .footer-logo {
     padding: 0;
   }
-  .footer-left__list{
+  .footer-left__list {
     padding: 0 2rem 0 0;
   }
-  .footer-middle__list{
+  .footer-middle__list {
     padding: 0 1rem 0 1rem;
   }
-  .footer-right__list{
-    padding: 0.5rem 0 0.5rem 0rem;;
+  .footer-right__list {
+    padding: 0.5rem 0 0.5rem 0rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .footer-container{
+  .footer-container {
     height: auto;
   }
-  .footer-logo{
-    padding-top: 1rem;
+  .footer-logo {
+    padding-top: 3rem;
   }
-  .footer-left{
+  .footer-left {
     width: 100%;
   }
-  .footer-left__list{
+  .footer-left__list {
     padding: 0;
     flex-direction: column;
   }
-  .footer-left__list li{
+  .footer-left__list li {
     border-right: none;
-    padding: 1rem 0.6rem;
+    padding: 0.8rem 0.6rem;
   }
-  .footer-left__list li:last-child{
-    padding: 1rem 0.6rem 2.5rem 0.6rem;
+  .footer-left__list li:last-child {
+    padding: 1rem 0.6rem 1.7rem 0.6rem;
   }
-  .footer-middle{
+  .footer-middle {
     width: 100%;
     text-align: center;
     padding-bottom: 1.5rem;
   }
-  .footer-right{
+  .footer-right {
     width: 100%;
   }
-  .footer-right__list li:first-child{
+  .footer-right__list li:first-child {
     display: none;
+  }
+  .address {
+    padding-bottom: 3rem;
   }
 }
 
-@media screen and (min-width: 992px){
-  .modal-custom__xl{
+@media screen and (min-width: 992px) {
+  .modal-custom__xl {
     max-width: 80%;
   }
 }
-@media screen and (min-width: 576px){
-  .modal-custom__xl{
+@media screen and (min-width: 576px) {
+  .modal-custom__xl {
     max-width: 80%;
   }
-  .modal-body::before{
+  .modal-body::before {
     width: 70%;
   }
 }
-@media screen and (max-width: 900px){
-  .modal-body::before{
+@media screen and (max-width: 900px) {
+  .modal-body::before {
     display: none;
   }
-  .modal-header{
+  .modal-header {
     border-bottom: 2px solid var(--amarillo);
   }
-  .modal-body{
+  .modal-body {
     flex-direction: column;
   }
-  .modal-body__image{
+  .modal-body__image {
     align-self: auto;
     margin: 1rem 3rem 1rem 3rem;
   }
-  .modal-footer{
+  .modal-footer {
     flex-direction: column;
-    padding: 0em 2em 30px 2em
+    padding: 0em 2em 30px 2em;
   }
 }
 
 /* ----- Pagina COMUNIDAD ----- */
-@media screen and (max-width: 620px){
-  .subheader-image{
+@media screen and (max-width: 600px) {
+  .header-image__comunidad {
+    background-position: -35rem center;
+  }
+  .header-title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .letter-e-image__comunity {
+    display: none;
+  }
+  .subheader-image {
     padding-bottom: 0px;
   }
-  .subheader-comunity__text{
+  .subheader-comunity__text {
     text-align: center;
     padding-top: 2rem;
   }
-  .section-telegram__container{
+  .section-telegram__container {
     text-align: center;
     padding-left: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: none;
   }
-  .section-telegram__list{
+  .section-telegram__list {
     list-style-type: none;
   }
-  .section-telegram__container h3{
+  .section-telegram__container h3 {
     margin-bottom: 2rem;
   }
-  .btn-ser-parte{
+  .btn-ser-parte {
     margin-top: 2rem;
   }
 }
 
 /* ----- Pagina NOSOTROS ----- */
-@media screen and (max-width: 760px){
-  .header-title__nosotros{
+@media screen and (max-width: 760px) {
+  .header-title__nosotros {
     text-align: center;
     padding: 2rem;
   }
-  .header-text__nosotros{
+  .header-text__nosotros {
     text-align: center;
     max-width: none;
     padding: 0rem 3rem 3rem 3rem;
   }
-  .section-team__container{
+  .section-team__container {
     padding: 7rem 0;
   }
-  .section-team__direccion-title{
+  .section-team__direccion-title {
     text-align: center;
     margin-bottom: 2em;
   }
 }
-@media screen and (max-width: 975px){
-  .section-nuestros-valores__container{
+@media screen and (max-width: 975px) {
+  .section-nuestros-valores__container {
     padding: 3rem 0;
   }
-  .nuestros-valores__image{
+  .nuestros-valores__image {
     display: none;
   }
-  .nuestros-valores__title{
+  .nuestros-valores__title {
     text-align: center;
     margin: 0;
     padding: 0 0 2.5rem 0;
   }
-  .nuestros-valores__text-mobile{
+  .nuestros-valores__text-mobile {
     display: flex;
     justify-content: center;
     text-align: center;
   }
-  .nuestros-valores__text-mobile ul{
+  .nuestros-valores__text-mobile ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  .nuestros-valores__text-mobile li{
+  .nuestros-valores__text-mobile li {
     padding-bottom: 0.5rem;
   }
 }
-@media screen and (max-width: 768px){
-  .trabaja-nosotros__row{
+@media screen and (max-width: 768px) {
+  .trabaja-nosotros__row {
     padding: 3rem;
   }
-  .trabaja-nosotros__title{
+  .trabaja-nosotros__title {
     text-align: center;
+  }
+}
+
+/* ----- Pagina PARTICULARES ----- */
+@media screen and (max-width: 600px) {
+  .container-card__particulares {
+    margin: 0 2rem;
+    flex-direction: column;
+  }
+  .card__particulares-container-image {
+    padding: 1rem 12rem;
+  }
+  .card__particulares-title {
+    text-align: center;
+    padding-left: 0;
+  }
+  .card__particulares-paragraph {
+    text-align: center;
+  }
+  .button-card__particulares {
+    align-self: center !important;
   }
 }
