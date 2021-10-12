@@ -119,7 +119,7 @@
   position: absolute;
 }
 .fotoObjetivo {
-  width: 40.4%;
+  width: 40%;
   display: block;
   position: absolute;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
@@ -1370,4 +1370,1119 @@
   .button-card__particulares {
     align-self: center !important;
   }
+}
+
+@media screen and (max-width: 1100px) {
+  
+  .fotoEnlazar {
+    width: 28%;
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 650px;
+  }
+  
+  .tituloObjetivo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 100px;
+    line-height: 50px;
+    margin-left: 600px;
+  }
+  .textoObjetivo {
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    width: 40%;
+    margin-left: 600px;
+    position: absolute;
+  }
+  .fotoObjetivo {
+    width: 49%;
+    display: block;
+    position: absolute;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 16px;
+   
+}
+}
+@media screen and (max-width: 980px) {
+  
+  .fotoEnlazar {
+    width: 28%;
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 600px;
+  }
+  
+  .nuestroObjetivo {
+    background-color: #34668a;
+    width: 100%;
+    height: 398px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .tituloObjetivo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 80px;
+    line-height: 50px;
+    margin-left: 550px;
+  }
+  .textoObjetivo {
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    width: 40%;
+    margin-left: 550px;
+    position: absolute;
+  }
+  .fotoObjetivo {
+    width: 55%;
+    display: block;
+    position: absolute;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  }
+  .swiper-slide img {
+    width: 150px;
+    /* display: block; */
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 16px;
+ 
+}
+ 
+  .container-conoce-nuestros-servicios {
+    background-color: var(--azul-claro);
+  }
+  
+  
+  .buttonAprende {
+    background-color: #ebbe48;
+    color: var(--negro);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 0.5rem 2rem;
+    transition: ease-in-out 0.2s;
+    margin-left: 50px;
+  }
+  .letter-form-index {
+    display: none;
+    position: absolute;
+    width: 28rem;
+    top: 200rem;
+    left: 0;
+}
+.form-consulta {
+  width: 60% !important;
+  padding-right: 6rem;
+}
+  
+ 
+  .letter-form-index {
+    position: absolute;
+    width: 28rem;
+    top: 200rem;
+    left: 0;
+  }
+  .form-consulta {
+    width: 50%;
+    padding-right: 6rem;
+  }
+  .form-consulta h2 {
+    color: var(--azul-oscuro);
+  }
+  .button-form-consulta {
+    background-color: var(--amarillo);
+    border-radius: 1.2em;
+    padding: 0.4rem 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: ease-in-out 0.2s;
+  }
+  .button-form-consulta:hover {
+    transform: scale(1.02);
+  }
+  
+}
+@media screen and (max-width: 860px) {
+  
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 500px;
+    margin-top: -25px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .tituloEnlazar {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 20px;
+    line-height: 50px;
+    margin-left: 50px;
+  }
+  .textoSomos {
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+    width: 50%;
+    padding-left: 50px;
+  }
+  .fotoEnlazar {
+    width: 28%;
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 500px;
+  }
+  
+  .nuestroObjetivo {
+    background-color: #34668a;
+    width: 100%;
+    height: 355px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .tituloObjetivo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 50px;
+    line-height: 50px;
+    margin-left: 480px;
+  }
+  .textoObjetivo {
+    font-size: 17px;
+    color: #ffffff;
+    display: block;
+    width: 40%;
+    margin-left: 480px;
+    position: absolute;
+  }
+  .fotoObjetivo {
+    width: 55.9%;
+    display: block;
+    position: absolute;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+   
+    
+  }
+  .swiper-slide img {
+    width: 150px;
+    /* display: block; */
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 16px;
+ 
+}
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 50px;
+}
+.letter-form-index {
+  display: none;
+  position: absolute;
+  width: 28rem;
+  top: 200rem;
+  left: 0;
+}
+.form-consulta {
+width: 60% !important;
+padding-right: 6rem;
+}
+
+
+.letter-form-index {
+  position: absolute;
+  width: 28rem;
+  top: 200rem;
+  left: 0;
+}
+.form-consulta {
+  width: 50%;
+  padding-right: 6rem;
+}
+.form-consulta h2 {
+  color: var(--azul-oscuro);
+    margin-top: 80px;
+}
+
+.button-form-consulta {
+  background-color: var(--amarillo);
+  border-radius: 1.2em;
+  padding: 0.4rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: ease-in-out 0.2s;
+}
+.button-form-consulta:hover {
+  transform: scale(1.02);
+}
+
+}
+@media screen and (max-width: 790px) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 400px;
+    margin-top: -25px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  .tituloEnlazar {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 1px;
+    line-height: 50px;
+    margin-left: 50px;
+  }
+  .textoSomos {
+    font-size: 17px;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+   
+    
+  }
+  .fotoEnlazar {
+    display: none;
+  }
+  
+  .nuestroObjetivo {
+    background-color: #34668a;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  .tituloObjetivo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: -160px;
+    line-height: 50px;
+    margin-left: -340px;
+  }
+  .textoObjetivo {
+    font-size: 17px;
+    color: #ffffff;
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+    margin-left: -340px
+  }
+  .fotoObjetivo {
+    display: none;
+  }
+  .letter-e-image__nuestros-servicios {
+    display: none;
+    
+}
+.bannerAprende {
+  background-image: url("../assets/images/aprende-con-nosotros-tablet.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  padding: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.tituloAprende {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.textoAprende {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 30px;
+}
+.form-consulta {
+  width: 70% !important;
+  padding-right: 6rem;
+  }
+  .header-image-servicios-general {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/servicios-cover-tablet.webp");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    position: relative;
+    top: 5.5rem;
+  }
+  .header-title {
+    color: var(--blanco);
+    padding: 0 1rem;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+}
+
+  
+  .serviciosTitulo {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 5rem;
+    padding-bottom: 8rem;
+    padding-top:.1rem;
+  }
+  h5, h5 {
+    font-size: 18px;
+}
+
+  .card-body-servicios {
+    color: var(--blanco);
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  
+  .header-image1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/revision-cv-gratis-tablet.webp");
+    background-position: top center; /*3rem*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    flex-direction: column;
+  }
+  .header-title1 {
+    color: white;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+    display: block;
+  }
+  
+  .header-image2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/letra-e-completa.png");
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    height: 60vh;
+    justify-items: center;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+  .header-title2 {
+    color: #34668a;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    align-self: flex-start;
+    padding-top: 120px;
+  }
+  .header-title2 span{
+    font-weight: bold;
+  }
+  
+}
+@media screen and (max-width: 680px) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 450px;
+    margin-top: -44px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }  
+  .nuestroObjetivo {
+    background-color: #34668a;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+  }
+  .tituloObjetivo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: -160px;
+    line-height: 50px;
+    margin-left: -280px;
+  }
+  .textoObjetivo {
+    font-size: 17px;
+    color: #ffffff;
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+    margin-left: -280px
+  }
+  .form-consulta {
+    width: 80% !important;
+    padding-right: 3rem;
+    }
+}
+@media screen and (max-width: 560px) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 450px;
+    margin-top: -90px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  } 
+  .tituloEnlazar {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 1px;
+    margin-left: 25px;
+  }
+  .textoSomos {
+    font-size: 16px;
+    color: #ffffff;
+    width: 100%;
+    text-align: left;
+    margin-left: -30px;
+   
+    
+  } 
+  .nuestroObjetivo {
+    background-color: #34668a;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+  }
+  .tituloObjetivo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: -160px;
+    line-height: 50px;
+    margin-left: -245px;
+  }
+  .textoObjetivo {
+    font-size: 16px;
+    color: #ffffff;
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+    margin-left: -245px
+  }
+  .conocenos {
+    padding-top: 5rem;
+}
+  .tituloConocenos {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .textoConocenos {
+    font-size: 16px;
+  }
+  .tituloAprende {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+  .textoAprende {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+  }
+  .header-title {
+    color: var(--blanco);
+    padding: 0 1rem;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/letra-e-completa.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 450px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 70px;
+
+}
+.header-title2 {
+  color: #34668a;
+  font-size:25px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 85px;
+}
+}
+@media screen and (max-width: 480px) {
+  
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 400px;
+    margin-top: -120px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+  .tituloObjetivo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: -160px;
+    line-height: 50px;
+    margin-left: -210px;
+  }
+  .textoObjetivo {
+    font-size: 16px;
+    color: #ffffff;
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+    margin-left: -210px
+  }
+  .bannerAprende {
+    background-image: url("../assets/images/aprende-con-nosotros-mobile.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+    padding: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.letter-e-dos-image__nuestros-servicios {
+  display: none;
+}
+.form-consulta h2 {
+  color: var(--azul-oscuro);
+  margin-top: 80px;
+  font-size: 20px !important;
+  
+}
+.image-servicios-general {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/servicios-cover-tablet-mobile.webp");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  position: relative;
+  top: 5.5rem;
+}
+.header-title {
+  color: var(--blanco);
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.serviciosTitulo {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+}
+.header-image1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/revision-cv-gratis-mobile.webp");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  flex-direction: column;
+}
+.header-title1 {
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/letra-e-completa.png");
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 350px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 65px;}
+
+}
+@media screen and (max-width: 420px) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 400px;
+    margin-top: -180px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.tituloEnlazar {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 5px;
+  margin-left: 25px;
+}
+.textoSomos {
+  font-size: 15px;
+  color: #ffffff;
+  width: 100%;
+  text-align: left;
+  margin-left: -30px;
+  
+} 
+
+
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 30px;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+.tituloObjetivo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: -160px;
+  line-height: 50px;
+  margin-left: -180px;
+}
+.textoObjetivo {
+  font-size: 15px;
+  color: #ffffff;
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  margin-left: -180px
+}
+.tituloConocenos {
+  font-size: 20px;
+  font-weight: bold;
+}
+.textoConocenos {
+  font-size: 15px;
+}
+.subheader-image {
+  align-self: center;
+  padding-bottom: 10px;
+  width: 1.5rem;
+  transform: rotate(
+90deg);
+  filter: invert(31%) sepia(68%) saturate(409%) hue-rotate(
+162deg) brightness(98%) contrast(89%);
+}
+.tituloAprende {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.textoAprende {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.teAcompañamos {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.form-consulta {
+  width: 85% !important;
+  padding-right: 3rem;
+  }
+}
+@media screen and (max-width: 411px) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 400px;
+    margin-top: -190px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.header-title1 {
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+}
+@media screen and (max-width: 375px) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 450px;
+    margin-top: -200px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.tituloObjetivo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: -160px;
+  line-height: 50px;
+  margin-left: -160px;
+}
+.textoObjetivo {
+  font-size: 15px;
+  color: #ffffff;
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  margin-left: -160px
+}
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 30px;
+  font-size: 10px;
+  margin-bottom: 20px;
+  width: 250px;
+}
+.header-title {
+  color: var(--blanco);
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+}
+}
+@media screen and (max-width: 360px) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 450px;
+    margin-top: -210px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.header-title1 {
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/letra-e-completa.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 17px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 60px;
+}
+}
+@media screen and (max-width: 320px) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 480px;
+    margin-top: -220px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.tituloObjetivo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: -160px;
+  line-height: 50px;
+  margin-left: -120px;
+}
+.textoObjetivo {
+  font-size: 15px;
+  color: #ffffff;
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  margin-left: -120px
+}
+.cards__container {
+  background-color: var(--azul-claro);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.serviciosTitulo {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-bottom: 8rem;
+  padding-top: .1rem;
+}
+
+}
+@media screen and (max-width: 300px) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 500px;
+    margin-top: -240px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.tituloEnlazar {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 5px;
+  margin-left: 25px;
+}
+.textoSomos {
+  font-size: 14px;
+  color: #ffffff;
+  width: 100%;
+  text-align: left;
+  margin-left: -30px;
+  
+} 
+.tituloObjetivo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: -160px;
+  line-height: 50px;
+  margin-left: -120px;
+}
+.textoObjetivo {
+  font-size: 14px;
+  color: #ffffff;
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  margin-left: -120px
+}
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 10px;
+  font-size: 10px;
+  margin-bottom: 20px;
+  width: 250px;
+}
+.form-consulta h2 {
+  color: var(--azul-oscuro);
+  margin-top: 80px;
+  font-size: 18px !important;
+}
+.button-form-consulta {
+  background-color: var(--amarillo);
+  border-radius: 1.2em;
+  padding: 0.4rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: ease-in-out 0.2s;
+  font-size: 15px;
+}
+.header-title {
+  color: var(--blanco);
+  padding: 0 1rem;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+.serviciosTitulo {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-bottom: 4rem;
+  padding-top: .1rem;
+}
+.header-title1 {
+  color: white;
+  padding: 1rem 1rem 2rem 1rem;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 0;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
+  display: block;
+}
+.header-image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/images/letra-e-completa.png);
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top center;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  height: 60vh;
+  justify-items: center;
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.header-title2 {
+  color: #34668a;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  align-self: flex-start;
+  padding-top: 40px;
+}
 }
