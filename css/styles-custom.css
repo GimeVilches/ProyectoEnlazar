@@ -215,9 +215,16 @@
 }
 .swiper-slide__testimonios {
   background-color: white !important;
+  
 }
 .card-person__testimonio {
   color: var(--negro);
+}
+.card-person__title {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
 }
 /* -----Fin TESTIMONIOS----- */
 
