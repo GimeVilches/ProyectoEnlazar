@@ -2129,6 +2129,69 @@ padding-right: 6rem;
   padding-top: 65px;}
 
 }
+@media screen and (max-width: 435px) {
+  .somosEnlazar {
+    background-color: #043959;
+    width: 100%;
+    height: 400px;
+    margin-top: -180px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.tituloEnlazar {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 5px;
+  margin-left: 25px;
+}
+.textoSomos {
+  font-size: 15px;
+  color: #ffffff;
+  width: 100%;
+  text-align: left;
+  margin-left: -30px;
+  
+} 
+.tituloObjetivo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: -160px;
+  line-height: 50px;
+  margin-left: -185px;
+}
+.textoObjetivo {
+  font-size: 15px;
+  color: #ffffff;
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  margin-left: -185px
+}
+.buttonAprende {
+  background-color: #ebbe48;
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: ease-in-out 0.2s;
+  margin-left: 30px;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+.serviciosTitulo {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 2.5rem;
+  padding-bottom: 8rem;
+  padding-top: .1rem;
+}
+}
+
 @media screen and (max-width: 420px) {
   .somosEnlazar {
     background-color: #043959;
@@ -2139,6 +2202,7 @@ padding-right: 6rem;
     flex-wrap: wrap;
     position: relative;
 }
+
 .tituloEnlazar {
   font-size: 20px;
   font-weight: bold;
