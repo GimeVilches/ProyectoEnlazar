@@ -1,6 +1,4 @@
 let scrollBoton = document.querySelector(".arrow-icon"); //Variable que apunta al boton de subir al top
-let enviarCv = document.getElementById("botoncitoPaProbrar");
-
 
 //Funcion de subir al top con boton
 addEventListener('scroll', () => {

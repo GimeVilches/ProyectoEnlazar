@@ -2,9 +2,12 @@
 <html lang="es">
 
 <head>
+    <!-- METAS -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta name="author" content="Consultora Enlazar">
+    <meta name="description" content="La mejor consultora, no pasar de los 150 caracteres">
     <title>Comunidad - Consultora Enlazar</title>
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicon/apple-icon-57x57.png">
@@ -28,6 +31,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- CSS CUSTOM -->
     <link rel="stylesheet" href="../css/styles-custom.css">
+    <!-- CSS AOE -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -102,8 +107,8 @@
     <!-- SUBHEADER o Seccion de Instagram -->
     <section class="container subheader-container-comunity">
         <img class="subheader-image" src="../assets/images/flecha-doble.svg" alt="Flecha doble">
-        <h3 class="subheader-comunity__text pb-5">Encontrarás</h3>
-        <div class="d-flex flex-wrap container justify-content-center">
+        <h3 class="subheader-comunity__text py-5">Encontrarás</h3>
+        <div data-aos="fade-up" class="d-flex flex-wrap container justify-content-center">
             <div class="col-4 col-md-2 d-flex flex-column align-items-center">
                 <img class="subheader-comunity__img" src="..//assets/images/icono-tips-consejos.svg"
                     alt="Icono tips y consejos">
@@ -175,9 +180,12 @@
                     Capacitaciones
                 </li>
             </ul>
-            <img class="avioncito-mobile d-none" src="../assets/images/avioncito-estatico.png" alt="Avion volando">
-            <a href="https://t.me/joinchat/e8dtvJ5XB2k1MGIx" target="_blank" class="button-card btn btn-ser-parte">¡quiero
+            <img class="avioncito-mobile d-none"
+                src="../assets/images/avioncito-estatico.png" alt="Avion volando">
+            <a href="https://t.me/joinchat/e8dtvJ5XB2k1MGIx" target="_blank"
+                class="button-card btn btn-ser-parte">¡quiero
                 ser parte!</a>
+            <img  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="plane-desktop reveal-plane" src="../assets/images/avioncito.gif" alt="Avion volando">
         </div>
     </section>
 
@@ -238,10 +246,18 @@
         <img class="arrow-icon" src="../assets/images/up-arrow.webp" alt="Flecha arriba">
     </div>
 
+
     <!-- Script CUSTOM -->
     <script src="../js/main.js"></script>
     <!-- Script BOOTSTRAP -->
     <script src="../js/bootstrap.bundle.js"></script>
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Inicializacion AOS -->
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 
 </html>

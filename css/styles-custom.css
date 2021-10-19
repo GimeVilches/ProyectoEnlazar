@@ -463,7 +463,7 @@
   text-transform: uppercase;
 }
 .btn-interesa {
-  padding: 0.2rem 4rem;
+  padding: 0.4rem 2rem;
   border: 2px solid var(--amarillo);
   color: var(--blanco);
   background: none;
@@ -472,7 +472,7 @@
   color: var(--amarillo);
 }
 .btn-comprar {
-  padding: 0.2rem 4.7rem;
+  padding: 0.4rem 2.7rem;
 }
 .position-absolute{
   background-color: #dc3545;
@@ -619,8 +619,8 @@
 }
 .modal-header {
   border-bottom: none;
-  justify-content: center;
-  /* padding-left: 1em; */
+  justify-content: flex-start;
+  padding-left: 19rem;
 }
 .modal-title {
   color: var(--blanco);
@@ -678,19 +678,25 @@
   font-weight: normal;
   list-style-image: url(../assets/images/flecha.svg);
 }
+.modal-body__list li::marker{
+  line-height: 0px;
+    font-weight: bold;
+    font-size: 2rem;
+}
 .modal-body p {
   color: var(--blanco);
 }
 .modal-footer {
   border-top: none;
-  padding: 2em;
+  padding: 2rem 7.5rem 2rem 2rem;
   justify-content: space-around;
 }
 .modal-footer__webinars {
   border-top: none;
-  padding: 2em;
+  padding: 2rem 9rem 2rem 2rem;
   display: flex;
   justify-content: right;
+  gap: 2rem;
 }
 .btn-close {
   background: transparent url(../assets/images/x-cerrar.svg);
@@ -723,13 +729,13 @@
   border: 2px solid var(--amarillo);
   color: var(--blanco);
   background: none;
-  padding: 0.2em 4.2em;
+  padding: 0.2rem 2rem;
 }
 .ver-fechas:hover{
   color: var(--amarillo);
 }
 .btn-interesa__webinars{
-  padding: 0.2rem 4rem;
+  padding: 0.2rem 2rem;
   background: var(--amarillo);
   color: var(--negro);
 }
@@ -785,8 +791,14 @@
 /* -----Fin Subheader o Seccion de Instagram----- */
 
 /* -----Inicio Seccion de Telegram----- */
+.plane-desktop{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 .section-telegram__container {
-  background-image: url(..//assets/images/avioncito.gif);
+  position: relative;
   background-color: var(--azul-claro);
   background-position: center bottom;
   background-size: contain;
@@ -1178,8 +1190,8 @@
   }
   .header-image__cursos-talleres{
     background-position: center;
-    background-size: contain;
-    height: 50vh;
+    background-size: cover;
+    height: 30vh;
     position: static;
     top: 0;
   }
@@ -1192,6 +1204,12 @@
   }
   .section-cards__container{
     padding-top: 4rem;
+  }
+  .btn-interesa{
+    padding: 0.4rem 3.3rem;
+  }
+  .btn-comprar{
+    padding: 0.4rem 4rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1321,6 +1339,8 @@
   }
   .modal-header {
     border-bottom: 2px solid var(--amarillo);
+    justify-content: center;
+    padding-left: 0;
   }
   .modal-body {
     flex-direction: column;
@@ -1338,17 +1358,33 @@
   }
   .modal-footer__webinars{
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 2rem 2rem 2rem;
   }
 }
 
 /* ----- Pagina COMUNIDAD ----- */
 @media screen and (max-width: 500px) {
-  
+  .fixed-top{
+    position: static !important;
+  }
+  .header{
+    height: 0% !important;
+  }
+  .header-image__comunidad{
+    background-position: center;
+    height: 30vh;
+    position: static;
+  }
   .letter-e-image__comunity{
     display: none;
   }
   .subheader-container-comunity{
-    padding: 5rem 0;
+    padding: 3rem 0;
+  }
+  .subheader-comunity__text{
+    margin-left: 1rem;
   }
   .btn-ir-ahora{
     margin-top: 4rem;
@@ -1373,6 +1409,9 @@
   }
   .btn-ser-parte{
     align-self: center;
+  }
+  .plane-desktop{
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1444,6 +1483,12 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .header-container__nosotros{
+    padding: 4.5rem 1.5rem 4.5rem 1.5rem;
+  }
+  .header-title__nosotros{
+    padding: 0;
+  }
   .section-other-team__container{
     display: none;
   }
@@ -1461,8 +1506,8 @@
   }
   .header-image__particulares{
     background-position: center;
-    background-size: contain;
-    height: 50vh;
+    background-size: cover;
+    height: 30vh;
     position: static;
     top: 0;
   }
@@ -1498,8 +1543,8 @@
 @media screen and (max-width: 480px) {
   .header-image__empresas{
     background-position: center;
-    background-size: contain;
-    height: 50vh;
+    background-size: cover;
+    height: 30vh;
     position: static;
     top: 0;
   }
